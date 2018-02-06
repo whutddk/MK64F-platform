@@ -1,5 +1,4 @@
 通用平台/PCB/flexplat/History/
-PCB/FPPWTS/Project Outputs for PWTS/
 *.rar
 *.zip
 *.LOG
@@ -10,4 +9,4 @@ PCB/FPPWTS/Project Outputs for PWTS/
 *.PcbDocPreview
 *.exe
 FRDM-K64F/FRDM-K64F/
-ARM+FPGA/参考设计/
+!FT2232使用/
