@@ -10,3 +10,4 @@
 *.exe
 FRDM-K64F/FRDM-K64F/
 !FT2232使用/*
+PCB/patch/Project Outputs for FPV0.2.1/
