@@ -5,8 +5,6 @@
 *.BOM
 *.CSV
 *.drc
-*.SchDocPreview
-*.PcbDocPreview
 *.exe
 FRDM-K64F/FRDM-K64F/
 !FT2232使用/*

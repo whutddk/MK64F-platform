@@ -1,0 +1,15 @@
+Output: Gerber Files
+Type  : Gerber
+From  : Variant [[No Variations]] of Project [Free Documents]
+   Generated File[FPV0.2.1.GTL]
+   Generated File[FPV0.2.1.GPT]
+   Generated File[FPV0.2.1.GKO]
+   Generated File[FPV0.2.1.RUL]
+   Generated File[FPV0.2.1.EXTREP]
+   Generated File[FPV0.2.1.REP]
+
+
+Files Generated   : 6
+Documents Printed : 0
+
+Finished Output Generation At 19:25:18 On 2018/3/4
