@@ -29,7 +29,7 @@ PowerPortNamesTakePriority=0
 PushECOToAnnotationFile=1
 DItemRevisionGUID=
 ReportSuppressedErrorsInMessages=0
-OutputPath=Project Outputs for FPV0-3
+OutputPath=
 
 [Document1]
 DocumentPath=Schlib.SchLib
@@ -240,7 +240,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 
 [GeneratedDocument1]
-DocumentPath=
+DocumentPath=Project Outputs for FPV0-3\Design Rule Check - FPV0-3.html
 DItemRevisionGUID=
 
 [Configuration1]
@@ -288,7 +288,7 @@ SCH_HasExpandLogicalToPhysicalSheets=-1
 SaveSettingsToOutJob=-1
 
 [Generic_EDE]
-OutputDir=Project Outputs for FPV0-3
+OutputDir=
 
 [OutputGroup1]
 Name=Netlist Outputs
