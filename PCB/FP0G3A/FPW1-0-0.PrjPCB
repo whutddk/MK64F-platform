@@ -192,7 +192,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 
 [Document11]
-DocumentPath=FPW1-0-2.PcbDoc
+DocumentPath=WUT-YJ-4-3-1.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -270,6 +270,10 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
+
+[GeneratedDocument1]
+DocumentPath=
+DItemRevisionGUID=
 
 [Configuration1]
 Name=Default Configuration
