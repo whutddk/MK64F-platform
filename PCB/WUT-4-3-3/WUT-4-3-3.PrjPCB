@@ -52,7 +52,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=SVJHIOKJ
+DocumentUniqueId=WFRXWGMN
 
 [Document2]
 DocumentPath=catalog.SchDoc
@@ -69,7 +69,7 @@ ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=BTGAXNPA
+DocumentUniqueId=QHQMOVQG
 
 [Document3]
 DocumentPath=FPGA_CONFIG.SchDoc
@@ -274,6 +274,23 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=FKMKUMJW
+
+[Document15]
+DocumentPath=..\..\..\..\local_PCB_lib\JLCSMT_LIB\Project Outputs for Miscellaneous Devices LC\Miscellaneous Devices LC.IntLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
 
 [Configuration1]
 Name=Default Configuration
