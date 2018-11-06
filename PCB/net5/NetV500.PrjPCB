@@ -52,7 +52,7 @@ ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=VWOASKHV
+DocumentUniqueId=JGHJCFOJ
 
 [Document2]
 DocumentPath=MCU.SchDoc
@@ -121,10 +121,6 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=NSDVVVLS
-
-[GeneratedDocument1]
-DocumentPath=Project Outputs for flexplatV1.0\Design Rule Check - FPv0.html
-DItemRevisionGUID=
 
 [Configuration1]
 Name=Default Configuration
@@ -419,7 +415,7 @@ OutputDefault12=0
 [OutputGroup6]
 Name=Report Outputs
 Description=
-TargetPrinter=Foxit Reader PDF Printer
+TargetPrinter=HP LaserJet Professional M1213nf MFP
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=Script
 OutputName1=Script Output
