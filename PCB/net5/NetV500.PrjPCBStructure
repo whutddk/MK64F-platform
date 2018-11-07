@@ -1,7 +1,4 @@
 Record=TopLevelDocument|FileName=catalog.SchDoc
 Record=SheetSymbol|SourceDocument=catalog.SchDoc|Designator=MCU_K64FX|SchDesignator=MCU_K64FX|FileName=MCU.SchDoc|SymbolType=Normal|RawFileName=MCU.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
-Record=SheetSymbol|SourceDocument=catalog.SchDoc|Designator=Memory|SchDesignator=Memory|FileName=RAM|SymbolType=Normal|RawFileName=RAM|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
 Record=SheetSymbol|SourceDocument=catalog.SchDoc|Designator=power_manage|SchDesignator=power_manage|FileName=power.SchDoc|SymbolType=Normal|RawFileName=power.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
 Record=SheetSymbol|SourceDocument=catalog.SchDoc|Designator=protocol1|SchDesignator=protocol1|FileName=connect.SchDoc|SymbolType=Normal|RawFileName=connect.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
-Record=SheetSymbol|SourceDocument=catalog.SchDoc|Designator=protocol2|SchDesignator=protocol2|FileName=USB.SchDoc|SymbolType=Normal|RawFileName=USB.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
-Record=SheetSymbol|SourceDocument=catalog.SchDoc|Designator=RF_mod|SchDesignator=RF_mod|FileName=thread|SymbolType=Normal|RawFileName=thread|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
