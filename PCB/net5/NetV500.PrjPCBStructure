@@ -1,4 +1,1 @@
-Record=TopLevelDocument|FileName=catalog.SchDoc
-Record=SheetSymbol|SourceDocument=catalog.SchDoc|Designator=MCU_K64FX|SchDesignator=MCU_K64FX|FileName=MCU.SchDoc|SymbolType=Normal|RawFileName=MCU.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
-Record=SheetSymbol|SourceDocument=catalog.SchDoc|Designator=power_manage|SchDesignator=power_manage|FileName=power.SchDoc|SymbolType=Normal|RawFileName=power.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
-Record=SheetSymbol|SourceDocument=catalog.SchDoc|Designator=protocol1|SchDesignator=protocol1|FileName=connect.SchDoc|SymbolType=Normal|RawFileName=connect.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=TopLevelDocument|FileName=Net500.SchDoc
