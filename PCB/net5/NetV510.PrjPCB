@@ -28,7 +28,7 @@ DItemRevisionGUID=
 ReportSuppressedErrorsInMessages=0
 FSMCodingStyle=eFMSDropDownList_OneProcess
 FSMEncodingStyle=eFMSDropDownList_OneHot
-OutputPath=
+OutputPath=Project Outputs for NetV510
 LogFolderPath=
 ManagedProjectGUID=
 IncludeDesignInRelease=0
@@ -93,6 +93,10 @@ DocumentPath=Project Outputs for NetV510\Design Rule Check - NetV510.html
 DItemRevisionGUID=
 
 [GeneratedDocument2]
+DocumentPath=Project Outputs for NetV510\Design Rule Check - NetV520.html
+DItemRevisionGUID=
+
+[GeneratedDocument3]
 DocumentPath=Project Outputs for NetV500\Design Rule Check - SensorV500.html
 DItemRevisionGUID=
 
@@ -143,7 +147,7 @@ SCH_HasExpandLogicalToPhysicalSheets=-1
 SaveSettingsToOutJob=-1
 
 [Generic_EDE]
-OutputDir=
+OutputDir=Project Outputs for NetV510
 
 [OutputGroup1]
 Name=Netlist Outputs
