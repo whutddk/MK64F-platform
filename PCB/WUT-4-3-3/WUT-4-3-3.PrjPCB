@@ -52,7 +52,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=LWGHSSHY
+DocumentUniqueId=YWATJNEC
 
 [Document2]
 DocumentPath=catalog.SchDoc
@@ -69,7 +69,7 @@ ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=TXBYYKLD
+DocumentUniqueId=QBTYYBTC
 
 [Document3]
 DocumentPath=FPGA_CONFIG.SchDoc
