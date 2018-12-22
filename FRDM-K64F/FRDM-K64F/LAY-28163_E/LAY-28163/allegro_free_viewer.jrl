@@ -1,0 +1,22 @@
+\t (00:00:00) allegro_free_viewer 17.2 S015 Windows SPB 64-bit Edition
+\t (00:00:00)     Journal start - Wed Mar 28 21:22:51 2018
+\t (00:00:00)         Host=DESKTOP-WHUT User=DDK Pid=8432 CPUs=4
+\t (00:00:00) CmdLine= G:\Program Files\Cadence Design Systems\17.2\tools\bin\allegro_free_viewer.exe
+\t (00:00:00) 
+\t (00:00:00) Starting new design...
+\i (00:00:00) trapsize 990
+\i (00:00:00) trapsize 962
+\i (00:00:00) trapsize 803
+\i (00:00:00) trapsize 1424
+\i (00:00:03) open 
+\i (00:00:16) fillin "G:\通用平台\PCB\xc7a15tcsg325pkg.txt"
+\i (00:00:16) cd "G:\通用平台\PCB"
+\t (00:00:16) Opening existing design...
+\e (00:00:16) ERROR(SPMHDB-238): The design is corrupted. It may have been copied from a different architecture using ASCII mode; copy using binary mode.
+\e (00:00:16) ERROR(SPMHDB-238): The design is corrupted. It may have been copied from a different architecture using ASCII mode; copy using binary mode.
+\i (00:00:17) fillin confirm
+\t (00:00:17) Starting new design...
+\i (00:00:17) trapsize 1424
+\i (00:00:18) fillin "menu_cancel"
+\i (00:00:19) exit 
+\t (00:00:20)     Journal end - Wed Mar 28 21:23:11 2018
