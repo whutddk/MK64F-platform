@@ -1,0 +1,674 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body {
+			font-family : segoe ui;
+		}
+
+		td, th {
+			padding: 0.5em;
+			text-align : left;
+			width: 10em;
+		}
+		th {
+			background-color : #EEEEEE;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+			font-size: 0.9em;
+		}
+
+		.DRC_summary_header {
+			padding-bottom : 0.1em;
+			border : 0px solid black;
+			width: 100%;
+			align: left;
+		}
+
+		.DRC_summary_header_col1,
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3 {
+			color : black;
+			font-size:100%;
+			padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2em;
+			border : 0px solid black;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.DRC_summary_header_col1 {
+			font-weight: bold;
+			width: 8em;
+		}
+
+		.DRC_summary_header_col2 {
+			width: 0.1em;
+		
+		}
+
+		.DRC_summary_header_col3 {
+			width : auto;
+		}
+
+		.header_holder {
+		    Width = 100%;
+		    border = 0px solid green;
+		    padding = 0;
+		}
+
+
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 8em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://Q:\DDK\Documents\Altium\AD18\Templates\AD_logo.png
+		"><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td class="column1">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">2018/11/15</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">16:53:10</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:01</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc" class="file"><acronym title="Q:\通用平台\PCB\net5\NetV520.PcbDoc">Q:\通用平台\PCB\net5\NetV520.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td class="column2">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">118</td></tr>
+</table>
+</td>
+</table><a name="IDJE0CN3C4Y04GKLDRHMUM3K4YLF4BGYRDFA51NTM3I3J2KJTMN52L"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDNNBFXV3PSCBKF3YXHNVSPC3K3LZBWJPFRO0CYSLI3QWU4IYUIPRK">Clearance Constraint (Gap=5mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDQ5Q05RTCGVQRMLG2425LVTK0TI0SNE2IWULLQXGHOCQ04KGQPPZM">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDOT2K1E521YIQN15XMNQY52QKLFGSAX4X3ITSABPRMSPY144FS2KB">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDQ14EV02V4JYUMIUFI4A1IBP51OXKA44YFOB3YGGBXCWTDH1ZDFBD">Modified Polygon (Allow modified: No), (Allow shelved: No)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDXLRGYUYQV5NOKUKBUIUVZZUJADDQ0TNP5KLK44H5IIJTDHML4H1B">Width Constraint (Min=5mil) (Max=80mil) (Preferred=10mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID1N2OMO3XO2RRLSJGOPUZMO05PECUKUF0RSO1MYMVWR1BLKEDH2AN">Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDJTKLHB3SU1XVE0NDDJ5ZSJ30YF42XW520JYRHVJ2RQ4ES4EUD2R">Hole Size Constraint (Min=1mil) (Max=100mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDHQU5GQXBCK4UDJMNQZIBKBOOE1JBY5VLOTBADEE4CIWCEQKEGVH">Hole To Hole Clearance (Gap=10mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDXFAYKSWWQAT2BX5CR2ELVIQWEGUVHRQEDHOJONVUHFU5EFPC0IB">Minimum Solder Mask Sliver (Gap=10mil) (All),(All)</a></td>
+<td class="column2">118</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDKRVJHGJ3ROOKCMU2A3AZMQGFKB125QX25KPZAZP41N33SHWDQN1G">Net Antennae (Tolerance=0mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDZ1FCKM5SCFGDNEEV0H3UJUENWMJLJXYCPYDUSYG4JREG2L1DQ10H">Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">118</td>
+</tr>
+</table><br><a name="IDXFAYKSWWQAT2BX5CR2ELVIQWEGUVHRQEDHOJONVUHFU5EFPC0IB"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Minimum Solder Mask Sliver (Gap=10mil) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4764.58mil|Location2.X=4775.83mil|Location1.Y=3107.643mil|Location2.Y=3118.893mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4764.58mil|Location2.X=4775.83mil|Location1.Y=3107.643mil|Location2.Y=3118.893mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (5.843mil &lt; 10mil) Between Pad C10-1(1525mil,-413.464mil) on Top Layer And Pad C10-2(1525mil,-380mil) on Top Layer [Top Solder] Mask Sliver [5.843mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4824.58mil|Location2.X=4835.83mil|Location1.Y=3107.643mil|Location2.Y=3118.893mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4824.58mil|Location2.X=4835.83mil|Location1.Y=3107.643mil|Location2.Y=3118.893mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (5.843mil &lt; 10mil) Between Pad C11-1(1585mil,-380mil) on Top Layer And Pad C11-2(1585mil,-413.465mil) on Top Layer [Top Solder] Mask Sliver [5.843mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5084.58mil|Location2.X=5095.83mil|Location1.Y=3124.375mil|Location2.Y=3135.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5084.58mil|Location2.X=5095.83mil|Location1.Y=3124.375mil|Location2.Y=3135.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (5.843mil &lt; 10mil) Between Pad C12-1(1845mil,-396.732mil) on Top Layer And Pad C12-2(1845mil,-363.268mil) on Top Layer [Top Solder] Mask Sliver [5.843mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5049.375mil|Location2.X=5060.625mil|Location1.Y=2239.58mil|Location2.Y=2250.83mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5049.375mil|Location2.X=5060.625mil|Location1.Y=2239.58mil|Location2.Y=2250.83mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (5.843mil &lt; 10mil) Between Pad C13-1(1778.268mil,-1250mil) on Top Layer And Pad C13-2(1811.732mil,-1250mil) on Top Layer [Top Solder] Mask Sliver [5.843mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5179.375mil|Location2.X=5190.625mil|Location1.Y=2834.58mil|Location2.Y=2845.83mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5179.375mil|Location2.X=5190.625mil|Location1.Y=2834.58mil|Location2.Y=2845.83mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (5.843mil &lt; 10mil) Between Pad C14-1(1941.732mil,-655mil) on Top Layer And Pad C14-2(1908.268mil,-655mil) on Top Layer [Top Solder] Mask Sliver [5.843mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3979.58mil|Location2.X=3990.83mil|Location1.Y=3324.375mil|Location2.Y=3335.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3979.58mil|Location2.X=3990.83mil|Location1.Y=3324.375mil|Location2.Y=3335.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (5.843mil &lt; 10mil) Between Pad C16-1(740mil,-163.268mil) on Top Layer And Pad C16-2(740mil,-196.732mil) on Top Layer [Top Solder] Mask Sliver [5.843mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3824.375mil|Location2.X=3835.625mil|Location1.Y=2494.58mil|Location2.Y=2505.83mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3824.375mil|Location2.X=3835.625mil|Location1.Y=2494.58mil|Location2.Y=2505.83mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (5.843mil &lt; 10mil) Between Pad C17-1(586.732mil,-995mil) on Top Layer And Pad C17-2(553.268mil,-995mil) on Top Layer [Top Solder] Mask Sliver [5.843mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4239.375mil|Location2.X=4250.625mil|Location1.Y=2871.312mil|Location2.Y=2882.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4239.375mil|Location2.X=4250.625mil|Location1.Y=2871.312mil|Location2.Y=2882.562mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (5.843mil &lt; 10mil) Between Pad C18-1(1001.732mil,-618.268mil) on Top Layer And Pad C18-2(968.268mil,-618.268mil) on Top Layer [Top Solder] Mask Sliver [5.843mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4198.477mil|Location2.X=4209.727mil|Location1.Y=3169.375mil|Location2.Y=3180.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4198.477mil|Location2.X=4209.727mil|Location1.Y=3169.375mil|Location2.Y=3180.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (5.843mil &lt; 10mil) Between Pad C19-1(958.898mil,-351.732mil) on Top Layer And Pad C19-2(958.898mil,-318.268mil) on Top Layer [Top Solder] Mask Sliver [5.843mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3619.58mil|Location2.X=3630.83mil|Location1.Y=2869.375mil|Location2.Y=2880.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3619.58mil|Location2.X=3630.83mil|Location1.Y=2869.375mil|Location2.Y=2880.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (5.843mil &lt; 10mil) Between Pad C20-1(380mil,-618.268mil) on Top Layer And Pad C20-2(380mil,-651.732mil) on Top Layer [Top Solder] Mask Sliver [5.843mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5084.58mil|Location2.X=5095.83mil|Location1.Y=2519.375mil|Location2.Y=2530.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5084.58mil|Location2.X=5095.83mil|Location1.Y=2519.375mil|Location2.Y=2530.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (5.843mil &lt; 10mil) Between Pad C2-1(1845mil,-1001.732mil) on Top Layer And Pad C2-2(1845mil,-968.268mil) on Top Layer [Top Solder] Mask Sliver [5.843mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4234.013mil|Location2.X=4245.263mil|Location1.Y=2591.312mil|Location2.Y=2602.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4234.013mil|Location2.X=4245.263mil|Location1.Y=2591.312mil|Location2.Y=2602.562mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (5.843mil &lt; 10mil) Between Pad C22-1(996.37mil,-898.268mil) on Top Layer And Pad C22-2(962.905mil,-898.268mil) on Top Layer [Top Solder] Mask Sliver [5.843mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3919.375mil|Location2.X=3930.625mil|Location1.Y=2494.58mil|Location2.Y=2505.83mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3919.375mil|Location2.X=3930.625mil|Location1.Y=2494.58mil|Location2.Y=2505.83mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (5.843mil &lt; 10mil) Between Pad C23-1(648.268mil,-995mil) on Top Layer And Pad C23-2(681.732mil,-995mil) on Top Layer [Top Solder] Mask Sliver [5.843mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3639.375mil|Location2.X=3650.625mil|Location1.Y=2749.58mil|Location2.Y=2760.83mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3639.375mil|Location2.X=3650.625mil|Location1.Y=2749.58mil|Location2.Y=2760.83mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (5.843mil &lt; 10mil) Between Pad C24-1(401.732mil,-740mil) on Top Layer And Pad C24-2(368.268mil,-740mil) on Top Layer [Top Solder] Mask Sliver [5.843mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4116.147mil|Location2.X=4127.397mil|Location1.Y=2579.58mil|Location2.Y=2590.83mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4116.147mil|Location2.X=4127.397mil|Location1.Y=2579.58mil|Location2.Y=2590.83mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (5.843mil &lt; 10mil) Between Pad C25-1(845.04mil,-910mil) on Top Layer And Pad C25-2(878.504mil,-910mil) on Top Layer [Top Solder] Mask Sliver [5.843mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4116.147mil|Location2.X=4127.397mil|Location1.Y=2644.58mil|Location2.Y=2655.83mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4116.147mil|Location2.X=4127.397mil|Location1.Y=2644.58mil|Location2.Y=2655.83mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (5.843mil &lt; 10mil) Between Pad C26-1(845.04mil,-845mil) on Top Layer And Pad C26-2(878.504mil,-845mil) on Top Layer [Top Solder] Mask Sliver [5.843mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3284.58mil|Location2.X=3295.83mil|Location1.Y=3354.375mil|Location2.Y=3365.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3284.58mil|Location2.X=3295.83mil|Location1.Y=3354.375mil|Location2.Y=3365.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (5.843mil &lt; 10mil) Between Pad C28-1(45mil,-166.732mil) on Top Layer And Pad C28-2(45mil,-133.268mil) on Top Layer [Top Solder] Mask Sliver [5.843mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3444.58mil|Location2.X=3455.83mil|Location1.Y=2809.375mil|Location2.Y=2820.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3444.58mil|Location2.X=3455.83mil|Location1.Y=2809.375mil|Location2.Y=2820.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (5.843mil &lt; 10mil) Between Pad C29-1(205mil,-711.732mil) on Top Layer And Pad C29-2(205mil,-678.268mil) on Top Layer [Top Solder] Mask Sliver [5.843mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3639.375mil|Location2.X=3650.625mil|Location1.Y=2579.58mil|Location2.Y=2590.83mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3639.375mil|Location2.X=3650.625mil|Location1.Y=2579.58mil|Location2.Y=2590.83mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (5.843mil &lt; 10mil) Between Pad C30-1(401.732mil,-910mil) on Top Layer And Pad C30-2(368.268mil,-910mil) on Top Layer [Top Solder] Mask Sliver [5.843mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4924.375mil|Location2.X=4935.625mil|Location1.Y=2239.58mil|Location2.Y=2250.83mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4924.375mil|Location2.X=4935.625mil|Location1.Y=2239.58mil|Location2.Y=2250.83mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (5.843mil &lt; 10mil) Between Pad C4-1(1686.732mil,-1250mil) on Top Layer And Pad C4-2(1653.268mil,-1250mil) on Top Layer [Top Solder] Mask Sliver [5.843mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4504.58mil|Location2.X=4515.83mil|Location1.Y=2384.375mil|Location2.Y=2395.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4504.58mil|Location2.X=4515.83mil|Location1.Y=2384.375mil|Location2.Y=2395.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (5.843mil &lt; 10mil) Between Pad C6-1(1265mil,-1103.268mil) on Top Layer And Pad C6-2(1265mil,-1136.732mil) on Top Layer [Top Solder] Mask Sliver [5.843mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4694.375mil|Location2.X=4705.625mil|Location1.Y=2526.981mil|Location2.Y=2538.231mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4694.375mil|Location2.X=4705.625mil|Location1.Y=2526.981mil|Location2.Y=2538.231mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (5.843mil &lt; 10mil) Between Pad C8-1(1456.732mil,-962.598mil) on Top Layer And Pad C8-2(1423.268mil,-962.598mil) on Top Layer [Top Solder] Mask Sliver [5.843mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4522.013mil|Location2.X=4533.263mil|Location1.Y=3429.58mil|Location2.Y=3440.83mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4522.013mil|Location2.X=4533.263mil|Location1.Y=3429.58mil|Location2.Y=3440.83mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (5.843mil &lt; 10mil) Between Pad C9-1(1250.906mil,-60mil) on Top Layer And Pad C9-2(1284.37mil,-60mil) on Top Layer [Top Solder] Mask Sliver [5.843mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5181.312mil|Location2.X=5192.562mil|Location1.Y=2464.06mil|Location2.Y=2475.31mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5181.312mil|Location2.X=5192.562mil|Location1.Y=2464.06mil|Location2.Y=2475.31mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (5.843mil &lt; 10mil) Between Pad R10-1(1941.732mil,-1023.583mil) on Top Layer And Pad R10-2(1941.732mil,-1057.047mil) on Top Layer [Top Solder] Mask Sliver [5.843mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5069.375mil|Location2.X=5080.625mil|Location1.Y=3259.58mil|Location2.Y=3270.83mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5069.375mil|Location2.X=5080.625mil|Location1.Y=3259.58mil|Location2.Y=3270.83mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (5.843mil &lt; 10mil) Between Pad R1-1(1831.732mil,-230mil) on Top Layer And Pad R1-2(1798.268mil,-230mil) on Top Layer [Top Solder] Mask Sliver [5.843mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3694.58mil|Location2.X=3705.83mil|Location1.Y=2334.375mil|Location2.Y=2345.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3694.58mil|Location2.X=3705.83mil|Location1.Y=2334.375mil|Location2.Y=2345.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (5.843mil &lt; 10mil) Between Pad R13-1(455mil,-1186.732mil) on Top Layer And Pad R13-2(455mil,-1153.268mil) on Top Layer [Top Solder] Mask Sliver [5.843mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3619.58mil|Location2.X=3630.83mil|Location1.Y=2964.375mil|Location2.Y=2975.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3619.58mil|Location2.X=3630.83mil|Location1.Y=2964.375mil|Location2.Y=2975.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (5.843mil &lt; 10mil) Between Pad R14-1(380mil,-556.732mil) on Top Layer And Pad R14-2(380mil,-523.268mil) on Top Layer [Top Solder] Mask Sliver [5.843mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3444.58mil|Location2.X=3455.83mil|Location1.Y=2894.375mil|Location2.Y=2905.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3444.58mil|Location2.X=3455.83mil|Location1.Y=2894.375mil|Location2.Y=2905.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (5.843mil &lt; 10mil) Between Pad R15-1(205mil,-593.268mil) on Top Layer And Pad R15-2(205mil,-626.732mil) on Top Layer [Top Solder] Mask Sliver [5.843mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3639.375mil|Location2.X=3650.625mil|Location1.Y=2694.58mil|Location2.Y=2705.83mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3639.375mil|Location2.X=3650.625mil|Location1.Y=2694.58mil|Location2.Y=2705.83mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (5.843mil &lt; 10mil) Between Pad R19-1(368.268mil,-795mil) on Top Layer And Pad R19-2(401.732mil,-795mil) on Top Layer [Top Solder] Mask Sliver [5.843mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4029.58mil|Location2.X=4040.83mil|Location1.Y=2624.375mil|Location2.Y=2635.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4029.58mil|Location2.X=4040.83mil|Location1.Y=2624.375mil|Location2.Y=2635.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (5.843mil &lt; 10mil) Between Pad R20-1(790mil,-863.268mil) on Top Layer And Pad R20-2(790mil,-896.732mil) on Top Layer [Top Solder] Mask Sliver [5.843mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5069.375mil|Location2.X=5080.625mil|Location1.Y=3316.351mil|Location2.Y=3327.601mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5069.375mil|Location2.X=5080.625mil|Location1.Y=3316.351mil|Location2.Y=3327.601mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (5.843mil &lt; 10mil) Between Pad R2-1(1831.732mil,-173.229mil) on Top Layer And Pad R2-2(1798.268mil,-173.229mil) on Top Layer [Top Solder] Mask Sliver [5.843mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3639.375mil|Location2.X=3650.625mil|Location1.Y=2634.58mil|Location2.Y=2645.83mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3639.375mil|Location2.X=3650.625mil|Location1.Y=2634.58mil|Location2.Y=2645.83mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (5.843mil &lt; 10mil) Between Pad R21-1(368.268mil,-855mil) on Top Layer And Pad R21-2(401.732mil,-855mil) on Top Layer [Top Solder] Mask Sliver [5.843mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4624.375mil|Location2.X=4635.625mil|Location1.Y=2700.682mil|Location2.Y=2711.932mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4624.375mil|Location2.X=4635.625mil|Location1.Y=2700.682mil|Location2.Y=2711.932mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (5.843mil &lt; 10mil) Between Pad R22-1(1353.268mil,-788.898mil) on Top Layer And Pad R22-2(1386.732mil,-788.898mil) on Top Layer [Top Solder] Mask Sliver [5.843mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3637.847mil|Location2.X=3649.097mil|Location1.Y=2334.375mil|Location2.Y=2345.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3637.847mil|Location2.X=3649.097mil|Location1.Y=2334.375mil|Location2.Y=2345.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (5.843mil &lt; 10mil) Between Pad R24-1(398.268mil,-1186.732mil) on Top Layer And Pad R24-2(398.268mil,-1153.268mil) on Top Layer [Top Solder] Mask Sliver [5.843mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3580.997mil|Location2.X=3592.247mil|Location1.Y=2334.375mil|Location2.Y=2345.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3580.997mil|Location2.X=3592.247mil|Location1.Y=2334.375mil|Location2.Y=2345.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (5.843mil &lt; 10mil) Between Pad R25-1(341.417mil,-1186.732mil) on Top Layer And Pad R25-2(341.417mil,-1153.268mil) on Top Layer [Top Solder] Mask Sliver [5.843mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4809.375mil|Location2.X=4820.625mil|Location1.Y=3004.58mil|Location2.Y=3015.83mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4809.375mil|Location2.X=4820.625mil|Location1.Y=3004.58mil|Location2.Y=3015.83mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (5.843mil &lt; 10mil) Between Pad R3-1(1538.268mil,-485mil) on Top Layer And Pad R3-2(1571.732mil,-485mil) on Top Layer [Top Solder] Mask Sliver [5.843mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4809.375mil|Location2.X=4820.625mil|Location1.Y=2949.58mil|Location2.Y=2960.83mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4809.375mil|Location2.X=4820.625mil|Location1.Y=2949.58mil|Location2.Y=2960.83mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (5.843mil &lt; 10mil) Between Pad R4-1(1571.732mil,-540mil) on Top Layer And Pad R4-2(1538.268mil,-540mil) on Top Layer [Top Solder] Mask Sliver [5.843mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4489.375mil|Location2.X=4500.625mil|Location1.Y=3249.58mil|Location2.Y=3260.83mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4489.375mil|Location2.X=4500.625mil|Location1.Y=3249.58mil|Location2.Y=3260.83mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (5.843mil &lt; 10mil) Between Pad R5-1(1218.268mil,-240mil) on Top Layer And Pad R5-2(1251.732mil,-240mil) on Top Layer [Top Solder] Mask Sliver [5.843mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4489.375mil|Location2.X=4500.625mil|Location1.Y=3309.58mil|Location2.Y=3320.83mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4489.375mil|Location2.X=4500.625mil|Location1.Y=3309.58mil|Location2.Y=3320.83mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (5.843mil &lt; 10mil) Between Pad R6-1(1218.268mil,-180mil) on Top Layer And Pad R6-2(1251.732mil,-180mil) on Top Layer [Top Solder] Mask Sliver [5.843mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4934.58mil|Location2.X=4945.83mil|Location1.Y=2529.375mil|Location2.Y=2540.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4934.58mil|Location2.X=4945.83mil|Location1.Y=2529.375mil|Location2.Y=2540.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (5.843mil &lt; 10mil) Between Pad R7-1(1695mil,-958.268mil) on Top Layer And Pad R7-2(1695mil,-991.732mil) on Top Layer [Top Solder] Mask Sliver [5.843mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5284.375mil|Location2.X=5295.625mil|Location1.Y=2834.58mil|Location2.Y=2845.83mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5284.375mil|Location2.X=5295.625mil|Location1.Y=2834.58mil|Location2.Y=2845.83mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (5.843mil &lt; 10mil) Between Pad R8-1(2046.732mil,-655mil) on Top Layer And Pad R8-2(2013.268mil,-655mil) on Top Layer [Top Solder] Mask Sliver [5.843mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5252.847mil|Location2.X=5264.097mil|Location1.Y=2464.336mil|Location2.Y=2475.586mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5252.847mil|Location2.X=5264.097mil|Location1.Y=2464.336mil|Location2.Y=2475.586mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (5.843mil &lt; 10mil) Between Pad R9-1(2013.268mil,-1023.307mil) on Top Layer And Pad R9-2(2013.268mil,-1056.772mil) on Top Layer [Top Solder] Mask Sliver [5.843mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4863.84mil|Location2.X=4875.09mil|Location1.Y=2485.674mil|Location2.Y=2496.924mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4863.84mil|Location2.X=4875.09mil|Location1.Y=2485.674mil|Location2.Y=2496.924mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (5.78mil &lt; 10mil) Between Pad U1-1(1635.118mil,-1037.401mil) on Top Layer And Pad U1-2(1635.118mil,-1000mil) on Top Layer [Top Solder] Mask Sliver [5.78mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4863.84mil|Location2.X=4875.09mil|Location1.Y=2523.076mil|Location2.Y=2534.326mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4863.84mil|Location2.X=4875.09mil|Location1.Y=2523.076mil|Location2.Y=2534.326mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (5.779mil &lt; 10mil) Between Pad U1-2(1635.118mil,-1000mil) on Top Layer And Pad U1-3(1635.118mil,-962.598mil) on Top Layer [Top Solder] Mask Sliver [5.779mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5304.375mil|Location2.X=5315.625mil|Location1.Y=2728.351mil|Location2.Y=2739.601mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5304.375mil|Location2.X=5315.625mil|Location1.Y=2728.351mil|Location2.Y=2739.601mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (5.78mil &lt; 10mil) Between Pad U3-0(1975mil,-840mil) on Top Layer And Pad U3-1(2050mil,-737.638mil) on Top Layer [Top Solder] Mask Sliver [5.78mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5254.375mil|Location2.X=5265.625mil|Location1.Y=2728.351mil|Location2.Y=2739.601mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5254.375mil|Location2.X=5265.625mil|Location1.Y=2728.351mil|Location2.Y=2739.601mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (5.78mil &lt; 10mil) Between Pad U3-0(1975mil,-840mil) on Top Layer And Pad U3-2(2000mil,-737.638mil) on Top Layer [Top Solder] Mask Sliver [5.78mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5204.375mil|Location2.X=5215.625mil|Location1.Y=2728.351mil|Location2.Y=2739.601mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5204.375mil|Location2.X=5215.625mil|Location1.Y=2728.351mil|Location2.Y=2739.601mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (5.78mil &lt; 10mil) Between Pad U3-0(1975mil,-840mil) on Top Layer And Pad U3-3(1950mil,-737.638mil) on Top Layer [Top Solder] Mask Sliver [5.78mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5154.375mil|Location2.X=5165.625mil|Location1.Y=2728.351mil|Location2.Y=2739.601mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5154.375mil|Location2.X=5165.625mil|Location1.Y=2728.351mil|Location2.Y=2739.601mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (5.78mil &lt; 10mil) Between Pad U3-0(1975mil,-840mil) on Top Layer And Pad U3-4(1900mil,-737.638mil) on Top Layer [Top Solder] Mask Sliver [5.78mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5154.375mil|Location2.X=5165.625mil|Location1.Y=2600.399mil|Location2.Y=2611.649mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5154.375mil|Location2.X=5165.625mil|Location1.Y=2600.399mil|Location2.Y=2611.649mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (5.78mil &lt; 10mil) Between Pad U3-0(1975mil,-840mil) on Top Layer And Pad U3-5(1900mil,-942.362mil) on Top Layer [Top Solder] Mask Sliver [5.78mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5204.375mil|Location2.X=5215.625mil|Location1.Y=2600.399mil|Location2.Y=2611.649mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5204.375mil|Location2.X=5215.625mil|Location1.Y=2600.399mil|Location2.Y=2611.649mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (5.78mil &lt; 10mil) Between Pad U3-0(1975mil,-840mil) on Top Layer And Pad U3-6(1950mil,-942.362mil) on Top Layer [Top Solder] Mask Sliver [5.78mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5254.375mil|Location2.X=5265.625mil|Location1.Y=2600.399mil|Location2.Y=2611.649mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5254.375mil|Location2.X=5265.625mil|Location1.Y=2600.399mil|Location2.Y=2611.649mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (5.78mil &lt; 10mil) Between Pad U3-0(1975mil,-840mil) on Top Layer And Pad U3-7(2000mil,-942.362mil) on Top Layer [Top Solder] Mask Sliver [5.78mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5304.375mil|Location2.X=5315.625mil|Location1.Y=2600.399mil|Location2.Y=2611.649mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5304.375mil|Location2.X=5315.625mil|Location1.Y=2600.399mil|Location2.Y=2611.649mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (5.78mil &lt; 10mil) Between Pad U3-0(1975mil,-840mil) on Top Layer And Pad U3-8(2050mil,-942.362mil) on Top Layer [Top Solder] Mask Sliver [5.78mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3786.58mil|Location2.X=3797.83mil|Location1.Y=2745.95mil|Location2.Y=2757.2mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3786.58mil|Location2.X=3797.83mil|Location1.Y=2745.95mil|Location2.Y=2757.2mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (4.662mil &lt; 10mil) Between Pad U6-1(522.362mil,-728.504mil) on Top Layer And Pad U6-2(542.047mil,-728.504mil) on Top Layer [Top Solder] Mask Sliver [4.662mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3963.745mil|Location2.X=3974.995mil|Location1.Y=2745.95mil|Location2.Y=2757.2mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3963.745mil|Location2.X=3974.995mil|Location1.Y=2745.95mil|Location2.Y=2757.2mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (4.662mil &lt; 10mil) Between Pad U6-10(699.528mil,-728.504mil) on Top Layer And Pad U6-11(719.213mil,-728.504mil) on Top Layer [Top Solder] Mask Sliver [4.662mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3944.06mil|Location2.X=3955.31mil|Location1.Y=2745.95mil|Location2.Y=2757.2mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3944.06mil|Location2.X=3955.31mil|Location1.Y=2745.95mil|Location2.Y=2757.2mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (4.661mil &lt; 10mil) Between Pad U6-10(699.528mil,-728.504mil) on Top Layer And Pad U6-9(679.843mil,-728.504mil) on Top Layer [Top Solder] Mask Sliver [4.661mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3983.43mil|Location2.X=3994.68mil|Location1.Y=2745.95mil|Location2.Y=2757.2mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3983.43mil|Location2.X=3994.68mil|Location1.Y=2745.95mil|Location2.Y=2757.2mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (4.661mil &lt; 10mil) Between Pad U6-11(719.213mil,-728.504mil) on Top Layer And Pad U6-12(738.898mil,-728.504mil) on Top Layer [Top Solder] Mask Sliver [4.661mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4003.115mil|Location2.X=4014.365mil|Location1.Y=2745.95mil|Location2.Y=2757.2mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4003.115mil|Location2.X=4014.365mil|Location1.Y=2745.95mil|Location2.Y=2757.2mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (4.661mil &lt; 10mil) Between Pad U6-12(738.898mil,-728.504mil) on Top Layer And Pad U6-13(758.583mil,-728.504mil) on Top Layer [Top Solder] Mask Sliver [4.661mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4022.8mil|Location2.X=4034.05mil|Location1.Y=2745.95mil|Location2.Y=2757.2mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4022.8mil|Location2.X=4034.05mil|Location1.Y=2745.95mil|Location2.Y=2757.2mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (4.662mil &lt; 10mil) Between Pad U6-13(758.583mil,-728.504mil) on Top Layer And Pad U6-14(778.268mil,-728.504mil) on Top Layer [Top Solder] Mask Sliver [4.662mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4042.485mil|Location2.X=4053.735mil|Location1.Y=2745.95mil|Location2.Y=2757.2mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4042.485mil|Location2.X=4053.735mil|Location1.Y=2745.95mil|Location2.Y=2757.2mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (4.661mil &lt; 10mil) Between Pad U6-14(778.268mil,-728.504mil) on Top Layer And Pad U6-15(797.953mil,-728.504mil) on Top Layer [Top Solder] Mask Sliver [4.661mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4062.17mil|Location2.X=4073.42mil|Location1.Y=2745.95mil|Location2.Y=2757.2mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4062.17mil|Location2.X=4073.42mil|Location1.Y=2745.95mil|Location2.Y=2757.2mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (4.661mil &lt; 10mil) Between Pad U6-15(797.953mil,-728.504mil) on Top Layer And Pad U6-16(817.638mil,-728.504mil) on Top Layer [Top Solder] Mask Sliver [4.661mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4112.958mil|Location2.X=4124.208mil|Location1.Y=2856.58mil|Location2.Y=2867.83mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4112.958mil|Location2.X=4124.208mil|Location1.Y=2856.58mil|Location2.Y=2867.83mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (4.661mil &lt; 10mil) Between Pad U6-17(888.504mil,-657.638mil) on Top Layer And Pad U6-18(888.504mil,-637.953mil) on Top Layer [Top Solder] Mask Sliver [4.661mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4112.958mil|Location2.X=4124.208mil|Location1.Y=2876.265mil|Location2.Y=2887.515mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4112.958mil|Location2.X=4124.208mil|Location1.Y=2876.265mil|Location2.Y=2887.515mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (4.661mil &lt; 10mil) Between Pad U6-18(888.504mil,-637.953mil) on Top Layer And Pad U6-19(888.504mil,-618.268mil) on Top Layer [Top Solder] Mask Sliver [4.661mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4112.958mil|Location2.X=4124.208mil|Location1.Y=2895.95mil|Location2.Y=2907.2mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4112.958mil|Location2.X=4124.208mil|Location1.Y=2895.95mil|Location2.Y=2907.2mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (4.662mil &lt; 10mil) Between Pad U6-19(888.504mil,-618.268mil) on Top Layer And Pad U6-20(888.504mil,-598.583mil) on Top Layer [Top Solder] Mask Sliver [4.662mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3806.265mil|Location2.X=3817.515mil|Location1.Y=2745.95mil|Location2.Y=2757.2mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3806.265mil|Location2.X=3817.515mil|Location1.Y=2745.95mil|Location2.Y=2757.2mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (4.661mil &lt; 10mil) Between Pad U6-2(542.047mil,-728.504mil) on Top Layer And Pad U6-3(561.732mil,-728.504mil) on Top Layer [Top Solder] Mask Sliver [4.661mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4112.958mil|Location2.X=4124.208mil|Location1.Y=2915.635mil|Location2.Y=2926.885mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4112.958mil|Location2.X=4124.208mil|Location1.Y=2915.635mil|Location2.Y=2926.885mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (4.661mil &lt; 10mil) Between Pad U6-20(888.504mil,-598.583mil) on Top Layer And Pad U6-21(888.504mil,-578.898mil) on Top Layer [Top Solder] Mask Sliver [4.661mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4112.958mil|Location2.X=4124.208mil|Location1.Y=2935.32mil|Location2.Y=2946.57mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4112.958mil|Location2.X=4124.208mil|Location1.Y=2935.32mil|Location2.Y=2946.57mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (4.661mil &lt; 10mil) Between Pad U6-21(888.504mil,-578.898mil) on Top Layer And Pad U6-22(888.504mil,-559.213mil) on Top Layer [Top Solder] Mask Sliver [4.661mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4112.958mil|Location2.X=4124.208mil|Location1.Y=2955.005mil|Location2.Y=2966.255mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4112.958mil|Location2.X=4124.208mil|Location1.Y=2955.005mil|Location2.Y=2966.255mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (4.662mil &lt; 10mil) Between Pad U6-22(888.504mil,-559.213mil) on Top Layer And Pad U6-23(888.504mil,-539.528mil) on Top Layer [Top Solder] Mask Sliver [4.662mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4112.958mil|Location2.X=4124.208mil|Location1.Y=2974.69mil|Location2.Y=2985.94mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4112.958mil|Location2.X=4124.208mil|Location1.Y=2974.69mil|Location2.Y=2985.94mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (4.661mil &lt; 10mil) Between Pad U6-23(888.504mil,-539.528mil) on Top Layer And Pad U6-24(888.504mil,-519.842mil) on Top Layer [Top Solder] Mask Sliver [4.661mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4112.958mil|Location2.X=4124.208mil|Location1.Y=2994.375mil|Location2.Y=3005.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4112.958mil|Location2.X=4124.208mil|Location1.Y=2994.375mil|Location2.Y=3005.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (4.662mil &lt; 10mil) Between Pad U6-24(888.504mil,-519.842mil) on Top Layer And Pad U6-25(888.504mil,-500.157mil) on Top Layer [Top Solder] Mask Sliver [4.662mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4112.958mil|Location2.X=4124.208mil|Location1.Y=3014.06mil|Location2.Y=3025.31mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4112.958mil|Location2.X=4124.208mil|Location1.Y=3014.06mil|Location2.Y=3025.31mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (4.661mil &lt; 10mil) Between Pad U6-25(888.504mil,-500.157mil) on Top Layer And Pad U6-26(888.504mil,-480.472mil) on Top Layer [Top Solder] Mask Sliver [4.661mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4112.958mil|Location2.X=4124.208mil|Location1.Y=3033.745mil|Location2.Y=3044.995mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4112.958mil|Location2.X=4124.208mil|Location1.Y=3033.745mil|Location2.Y=3044.995mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (4.661mil &lt; 10mil) Between Pad U6-26(888.504mil,-480.472mil) on Top Layer And Pad U6-27(888.504mil,-460.787mil) on Top Layer [Top Solder] Mask Sliver [4.661mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4112.958mil|Location2.X=4124.208mil|Location1.Y=3053.43mil|Location2.Y=3064.68mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4112.958mil|Location2.X=4124.208mil|Location1.Y=3053.43mil|Location2.Y=3064.68mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (4.662mil &lt; 10mil) Between Pad U6-27(888.504mil,-460.787mil) on Top Layer And Pad U6-28(888.504mil,-441.102mil) on Top Layer [Top Solder] Mask Sliver [4.662mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4112.958mil|Location2.X=4124.208mil|Location1.Y=3073.115mil|Location2.Y=3084.365mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4112.958mil|Location2.X=4124.208mil|Location1.Y=3073.115mil|Location2.Y=3084.365mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (4.661mil &lt; 10mil) Between Pad U6-28(888.504mil,-441.102mil) on Top Layer And Pad U6-29(888.504mil,-421.417mil) on Top Layer [Top Solder] Mask Sliver [4.661mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4112.958mil|Location2.X=4124.208mil|Location1.Y=3092.8mil|Location2.Y=3104.05mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4112.958mil|Location2.X=4124.208mil|Location1.Y=3092.8mil|Location2.Y=3104.05mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (4.662mil &lt; 10mil) Between Pad U6-29(888.504mil,-421.417mil) on Top Layer And Pad U6-30(888.504mil,-401.732mil) on Top Layer [Top Solder] Mask Sliver [4.662mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3825.95mil|Location2.X=3837.2mil|Location1.Y=2745.95mil|Location2.Y=2757.2mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3825.95mil|Location2.X=3837.2mil|Location1.Y=2745.95mil|Location2.Y=2757.2mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (4.662mil &lt; 10mil) Between Pad U6-3(561.732mil,-728.504mil) on Top Layer And Pad U6-4(581.417mil,-728.504mil) on Top Layer [Top Solder] Mask Sliver [4.662mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4112.958mil|Location2.X=4124.208mil|Location1.Y=3112.485mil|Location2.Y=3123.735mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4112.958mil|Location2.X=4124.208mil|Location1.Y=3112.485mil|Location2.Y=3123.735mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (4.661mil &lt; 10mil) Between Pad U6-30(888.504mil,-401.732mil) on Top Layer And Pad U6-31(888.504mil,-382.047mil) on Top Layer [Top Solder] Mask Sliver [4.661mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4112.958mil|Location2.X=4124.208mil|Location1.Y=3132.17mil|Location2.Y=3143.42mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4112.958mil|Location2.X=4124.208mil|Location1.Y=3132.17mil|Location2.Y=3143.42mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (4.661mil &lt; 10mil) Between Pad U6-31(888.504mil,-382.047mil) on Top Layer And Pad U6-32(888.504mil,-362.362mil) on Top Layer [Top Solder] Mask Sliver [4.661mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4062.17mil|Location2.X=4073.42mil|Location1.Y=3182.958mil|Location2.Y=3194.208mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4062.17mil|Location2.X=4073.42mil|Location1.Y=3182.958mil|Location2.Y=3194.208mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (4.661mil &lt; 10mil) Between Pad U6-33(817.638mil,-291.496mil) on Top Layer And Pad U6-34(797.953mil,-291.496mil) on Top Layer [Top Solder] Mask Sliver [4.661mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4042.485mil|Location2.X=4053.735mil|Location1.Y=3182.958mil|Location2.Y=3194.208mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4042.485mil|Location2.X=4053.735mil|Location1.Y=3182.958mil|Location2.Y=3194.208mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (4.661mil &lt; 10mil) Between Pad U6-34(797.953mil,-291.496mil) on Top Layer And Pad U6-35(778.268mil,-291.496mil) on Top Layer [Top Solder] Mask Sliver [4.661mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4022.8mil|Location2.X=4034.05mil|Location1.Y=3182.958mil|Location2.Y=3194.208mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4022.8mil|Location2.X=4034.05mil|Location1.Y=3182.958mil|Location2.Y=3194.208mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (4.662mil &lt; 10mil) Between Pad U6-35(778.268mil,-291.496mil) on Top Layer And Pad U6-36(758.583mil,-291.496mil) on Top Layer [Top Solder] Mask Sliver [4.662mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4003.115mil|Location2.X=4014.365mil|Location1.Y=3182.958mil|Location2.Y=3194.208mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4003.115mil|Location2.X=4014.365mil|Location1.Y=3182.958mil|Location2.Y=3194.208mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (4.661mil &lt; 10mil) Between Pad U6-36(758.583mil,-291.496mil) on Top Layer And Pad U6-37(738.898mil,-291.496mil) on Top Layer [Top Solder] Mask Sliver [4.661mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3983.43mil|Location2.X=3994.68mil|Location1.Y=3182.958mil|Location2.Y=3194.208mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3983.43mil|Location2.X=3994.68mil|Location1.Y=3182.958mil|Location2.Y=3194.208mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (4.662mil &lt; 10mil) Between Pad U6-37(738.898mil,-291.496mil) on Top Layer And Pad U6-38(719.213mil,-291.496mil) on Top Layer [Top Solder] Mask Sliver [4.662mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3963.745mil|Location2.X=3974.995mil|Location1.Y=3182.958mil|Location2.Y=3194.208mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3963.745mil|Location2.X=3974.995mil|Location1.Y=3182.958mil|Location2.Y=3194.208mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (4.661mil &lt; 10mil) Between Pad U6-38(719.213mil,-291.496mil) on Top Layer And Pad U6-39(699.528mil,-291.496mil) on Top Layer [Top Solder] Mask Sliver [4.661mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3944.06mil|Location2.X=3955.31mil|Location1.Y=3182.958mil|Location2.Y=3194.208mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3944.06mil|Location2.X=3955.31mil|Location1.Y=3182.958mil|Location2.Y=3194.208mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (4.661mil &lt; 10mil) Between Pad U6-39(699.528mil,-291.496mil) on Top Layer And Pad U6-40(679.843mil,-291.496mil) on Top Layer [Top Solder] Mask Sliver [4.661mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3845.635mil|Location2.X=3856.885mil|Location1.Y=2745.95mil|Location2.Y=2757.2mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3845.635mil|Location2.X=3856.885mil|Location1.Y=2745.95mil|Location2.Y=2757.2mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (4.661mil &lt; 10mil) Between Pad U6-4(581.417mil,-728.504mil) on Top Layer And Pad U6-5(601.102mil,-728.504mil) on Top Layer [Top Solder] Mask Sliver [4.661mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3924.375mil|Location2.X=3935.625mil|Location1.Y=3182.958mil|Location2.Y=3194.208mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3924.375mil|Location2.X=3935.625mil|Location1.Y=3182.958mil|Location2.Y=3194.208mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (4.662mil &lt; 10mil) Between Pad U6-40(679.843mil,-291.496mil) on Top Layer And Pad U6-41(660.158mil,-291.496mil) on Top Layer [Top Solder] Mask Sliver [4.662mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3904.69mil|Location2.X=3915.94mil|Location1.Y=3182.958mil|Location2.Y=3194.208mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3904.69mil|Location2.X=3915.94mil|Location1.Y=3182.958mil|Location2.Y=3194.208mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (4.661mil &lt; 10mil) Between Pad U6-41(660.158mil,-291.496mil) on Top Layer And Pad U6-42(640.472mil,-291.496mil) on Top Layer [Top Solder] Mask Sliver [4.661mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3885.005mil|Location2.X=3896.255mil|Location1.Y=3182.958mil|Location2.Y=3194.208mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3885.005mil|Location2.X=3896.255mil|Location1.Y=3182.958mil|Location2.Y=3194.208mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (4.662mil &lt; 10mil) Between Pad U6-42(640.472mil,-291.496mil) on Top Layer And Pad U6-43(620.787mil,-291.496mil) on Top Layer [Top Solder] Mask Sliver [4.662mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3865.32mil|Location2.X=3876.57mil|Location1.Y=3182.958mil|Location2.Y=3194.208mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3865.32mil|Location2.X=3876.57mil|Location1.Y=3182.958mil|Location2.Y=3194.208mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (4.661mil &lt; 10mil) Between Pad U6-43(620.787mil,-291.496mil) on Top Layer And Pad U6-44(601.102mil,-291.496mil) on Top Layer [Top Solder] Mask Sliver [4.661mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3845.635mil|Location2.X=3856.885mil|Location1.Y=3182.958mil|Location2.Y=3194.208mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3845.635mil|Location2.X=3856.885mil|Location1.Y=3182.958mil|Location2.Y=3194.208mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (4.661mil &lt; 10mil) Between Pad U6-44(601.102mil,-291.496mil) on Top Layer And Pad U6-45(581.417mil,-291.496mil) on Top Layer [Top Solder] Mask Sliver [4.661mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3825.95mil|Location2.X=3837.2mil|Location1.Y=3182.958mil|Location2.Y=3194.208mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3825.95mil|Location2.X=3837.2mil|Location1.Y=3182.958mil|Location2.Y=3194.208mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (4.662mil &lt; 10mil) Between Pad U6-45(581.417mil,-291.496mil) on Top Layer And Pad U6-46(561.732mil,-291.496mil) on Top Layer [Top Solder] Mask Sliver [4.662mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3806.265mil|Location2.X=3817.515mil|Location1.Y=3182.958mil|Location2.Y=3194.208mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3806.265mil|Location2.X=3817.515mil|Location1.Y=3182.958mil|Location2.Y=3194.208mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (4.661mil &lt; 10mil) Between Pad U6-46(561.732mil,-291.496mil) on Top Layer And Pad U6-47(542.047mil,-291.496mil) on Top Layer [Top Solder] Mask Sliver [4.661mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3786.58mil|Location2.X=3797.83mil|Location1.Y=3182.958mil|Location2.Y=3194.208mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3786.58mil|Location2.X=3797.83mil|Location1.Y=3182.958mil|Location2.Y=3194.208mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (4.661mil &lt; 10mil) Between Pad U6-47(542.047mil,-291.496mil) on Top Layer And Pad U6-48(522.362mil,-291.496mil) on Top Layer [Top Solder] Mask Sliver [4.661mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3675.95mil|Location2.X=3687.2mil|Location1.Y=3132.17mil|Location2.Y=3143.42mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3675.95mil|Location2.X=3687.2mil|Location1.Y=3132.17mil|Location2.Y=3143.42mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (4.661mil &lt; 10mil) Between Pad U6-49(451.496mil,-362.362mil) on Top Layer And Pad U6-50(451.496mil,-382.047mil) on Top Layer [Top Solder] Mask Sliver [4.661mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3865.32mil|Location2.X=3876.57mil|Location1.Y=2745.95mil|Location2.Y=2757.2mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3865.32mil|Location2.X=3876.57mil|Location1.Y=2745.95mil|Location2.Y=2757.2mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (4.661mil &lt; 10mil) Between Pad U6-5(601.102mil,-728.504mil) on Top Layer And Pad U6-6(620.787mil,-728.504mil) on Top Layer [Top Solder] Mask Sliver [4.661mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3675.95mil|Location2.X=3687.2mil|Location1.Y=3112.485mil|Location2.Y=3123.735mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3675.95mil|Location2.X=3687.2mil|Location1.Y=3112.485mil|Location2.Y=3123.735mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (4.661mil &lt; 10mil) Between Pad U6-50(451.496mil,-382.047mil) on Top Layer And Pad U6-51(451.496mil,-401.732mil) on Top Layer [Top Solder] Mask Sliver [4.661mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3675.95mil|Location2.X=3687.2mil|Location1.Y=3092.8mil|Location2.Y=3104.05mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3675.95mil|Location2.X=3687.2mil|Location1.Y=3092.8mil|Location2.Y=3104.05mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (4.662mil &lt; 10mil) Between Pad U6-51(451.496mil,-401.732mil) on Top Layer And Pad U6-52(451.496mil,-421.417mil) on Top Layer [Top Solder] Mask Sliver [4.662mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3675.95mil|Location2.X=3687.2mil|Location1.Y=3073.115mil|Location2.Y=3084.365mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3675.95mil|Location2.X=3687.2mil|Location1.Y=3073.115mil|Location2.Y=3084.365mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (4.661mil &lt; 10mil) Between Pad U6-52(451.496mil,-421.417mil) on Top Layer And Pad U6-53(451.496mil,-441.102mil) on Top Layer [Top Solder] Mask Sliver [4.661mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3675.95mil|Location2.X=3687.2mil|Location1.Y=3053.43mil|Location2.Y=3064.68mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3675.95mil|Location2.X=3687.2mil|Location1.Y=3053.43mil|Location2.Y=3064.68mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (4.661mil &lt; 10mil) Between Pad U6-53(451.496mil,-441.102mil) on Top Layer And Pad U6-54(451.496mil,-460.787mil) on Top Layer [Top Solder] Mask Sliver [4.661mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3675.95mil|Location2.X=3687.2mil|Location1.Y=3033.745mil|Location2.Y=3044.995mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3675.95mil|Location2.X=3687.2mil|Location1.Y=3033.745mil|Location2.Y=3044.995mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (4.662mil &lt; 10mil) Between Pad U6-54(451.496mil,-460.787mil) on Top Layer And Pad U6-55(451.496mil,-480.472mil) on Top Layer [Top Solder] Mask Sliver [4.662mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3675.95mil|Location2.X=3687.2mil|Location1.Y=3014.06mil|Location2.Y=3025.31mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3675.95mil|Location2.X=3687.2mil|Location1.Y=3014.06mil|Location2.Y=3025.31mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (4.661mil &lt; 10mil) Between Pad U6-55(451.496mil,-480.472mil) on Top Layer And Pad U6-56(451.496mil,-500.157mil) on Top Layer [Top Solder] Mask Sliver [4.661mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3675.95mil|Location2.X=3687.2mil|Location1.Y=2994.375mil|Location2.Y=3005.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3675.95mil|Location2.X=3687.2mil|Location1.Y=2994.375mil|Location2.Y=3005.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (4.662mil &lt; 10mil) Between Pad U6-56(451.496mil,-500.157mil) on Top Layer And Pad U6-57(451.496mil,-519.842mil) on Top Layer [Top Solder] Mask Sliver [4.662mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3675.95mil|Location2.X=3687.2mil|Location1.Y=2974.69mil|Location2.Y=2985.94mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3675.95mil|Location2.X=3687.2mil|Location1.Y=2974.69mil|Location2.Y=2985.94mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (4.661mil &lt; 10mil) Between Pad U6-57(451.496mil,-519.842mil) on Top Layer And Pad U6-58(451.496mil,-539.528mil) on Top Layer [Top Solder] Mask Sliver [4.661mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3675.95mil|Location2.X=3687.2mil|Location1.Y=2955.005mil|Location2.Y=2966.255mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3675.95mil|Location2.X=3687.2mil|Location1.Y=2955.005mil|Location2.Y=2966.255mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (4.662mil &lt; 10mil) Between Pad U6-58(451.496mil,-539.528mil) on Top Layer And Pad U6-59(451.496mil,-559.213mil) on Top Layer [Top Solder] Mask Sliver [4.662mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3675.95mil|Location2.X=3687.2mil|Location1.Y=2935.32mil|Location2.Y=2946.57mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3675.95mil|Location2.X=3687.2mil|Location1.Y=2935.32mil|Location2.Y=2946.57mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (4.661mil &lt; 10mil) Between Pad U6-59(451.496mil,-559.213mil) on Top Layer And Pad U6-60(451.496mil,-578.898mil) on Top Layer [Top Solder] Mask Sliver [4.661mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3885.005mil|Location2.X=3896.255mil|Location1.Y=2745.95mil|Location2.Y=2757.2mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3885.005mil|Location2.X=3896.255mil|Location1.Y=2745.95mil|Location2.Y=2757.2mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (4.662mil &lt; 10mil) Between Pad U6-6(620.787mil,-728.504mil) on Top Layer And Pad U6-7(640.472mil,-728.504mil) on Top Layer [Top Solder] Mask Sliver [4.662mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3675.95mil|Location2.X=3687.2mil|Location1.Y=2915.635mil|Location2.Y=2926.885mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3675.95mil|Location2.X=3687.2mil|Location1.Y=2915.635mil|Location2.Y=2926.885mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (4.661mil &lt; 10mil) Between Pad U6-60(451.496mil,-578.898mil) on Top Layer And Pad U6-61(451.496mil,-598.583mil) on Top Layer [Top Solder] Mask Sliver [4.661mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3675.95mil|Location2.X=3687.2mil|Location1.Y=2895.95mil|Location2.Y=2907.2mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3675.95mil|Location2.X=3687.2mil|Location1.Y=2895.95mil|Location2.Y=2907.2mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (4.662mil &lt; 10mil) Between Pad U6-61(451.496mil,-598.583mil) on Top Layer And Pad U6-62(451.496mil,-618.268mil) on Top Layer [Top Solder] Mask Sliver [4.662mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3675.95mil|Location2.X=3687.2mil|Location1.Y=2876.265mil|Location2.Y=2887.515mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3675.95mil|Location2.X=3687.2mil|Location1.Y=2876.265mil|Location2.Y=2887.515mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (4.661mil &lt; 10mil) Between Pad U6-62(451.496mil,-618.268mil) on Top Layer And Pad U6-63(451.496mil,-637.953mil) on Top Layer [Top Solder] Mask Sliver [4.661mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3675.95mil|Location2.X=3687.2mil|Location1.Y=2856.58mil|Location2.Y=2867.83mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3675.95mil|Location2.X=3687.2mil|Location1.Y=2856.58mil|Location2.Y=2867.83mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (4.662mil &lt; 10mil) Between Pad U6-63(451.496mil,-637.953mil) on Top Layer And Pad U6-64(451.496mil,-657.638mil) on Top Layer [Top Solder] Mask Sliver [4.662mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3904.69mil|Location2.X=3915.94mil|Location1.Y=2745.95mil|Location2.Y=2757.2mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3904.69mil|Location2.X=3915.94mil|Location1.Y=2745.95mil|Location2.Y=2757.2mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (4.661mil &lt; 10mil) Between Pad U6-7(640.472mil,-728.504mil) on Top Layer And Pad U6-8(660.158mil,-728.504mil) on Top Layer [Top Solder] Mask Sliver [4.661mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3924.375mil|Location2.X=3935.625mil|Location1.Y=2745.95mil|Location2.Y=2757.2mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3924.375mil|Location2.X=3935.625mil|Location1.Y=2745.95mil|Location2.Y=2757.2mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (4.662mil &lt; 10mil) Between Pad U6-8(660.158mil,-728.504mil) on Top Layer And Pad U6-9(679.843mil,-728.504mil) on Top Layer [Top Solder] Mask Sliver [4.662mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5182.816mil|Location2.X=5194.066mil|Location1.Y=3277.17mil|Location2.Y=3288.42mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5182.816mil|Location2.X=5194.066mil|Location1.Y=3277.17mil|Location2.Y=3288.42mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (1.842mil &lt; 10mil) Between Pad USB1-1(1960mil,-240mil) on Top Layer And Pad USB1-2(1960mil,-214.41mil) on Top Layer [Top Solder] Mask Sliver [1.842mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5182.816mil|Location2.X=5194.066mil|Location1.Y=3302.76mil|Location2.Y=3314.01mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5182.816mil|Location2.X=5194.066mil|Location1.Y=3302.76mil|Location2.Y=3314.01mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (1.843mil &lt; 10mil) Between Pad USB1-2(1960mil,-214.41mil) on Top Layer And Pad USB1-3(1960mil,-188.819mil) on Top Layer [Top Solder] Mask Sliver [1.843mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5182.816mil|Location2.X=5194.066mil|Location1.Y=3330.32mil|Location2.Y=3341.57mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5182.816mil|Location2.X=5194.066mil|Location1.Y=3330.32mil|Location2.Y=3341.57mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (5.779mil &lt; 10mil) Between Pad USB1-3(1960mil,-188.819mil) on Top Layer And Pad USB1-4(1960mil,-163.229mil) on Top Layer [Top Solder] Mask Sliver [5.779mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5182.816mil|Location2.X=5194.066mil|Location1.Y=3351.973mil|Location2.Y=3363.223mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5182.816mil|Location2.X=5194.066mil|Location1.Y=3351.973mil|Location2.Y=3363.223mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (5.78mil &lt; 10mil) Between Pad USB1-4(1960mil,-163.229mil) on Top Layer And Pad USB1-5(1960mil,-137.638mil) on Top Layer [Top Solder] Mask Sliver [5.78mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4889.509mil|Location2.X=4900.759mil|Location1.Y=3109.375mil|Location2.Y=3120.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4889.509mil|Location2.X=4900.759mil|Location1.Y=3109.375mil|Location2.Y=3120.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (9.717mil &lt; 10mil) Between Pad Y1-1(1666.693mil,-426.496mil) on Top Layer And Pad Y1-4(1666.693mil,-363.504mil) on Top Layer [Top Solder] Mask Sliver [9.717mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=Q:\%E9%80%9A%E7%94%A8%E5%B9%B3%E5%8F%B0\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4976.123mil|Location2.X=4987.373mil|Location1.Y=3109.375mil|Location2.Y=3120.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=Q:\通用平台\PCB\net5\NetV520.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4976.123mil|Location2.X=4987.373mil|Location1.Y=3109.375mil|Location2.Y=3120.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (9.717mil &lt; 10mil) Between Pad Y1-2(1753.307mil,-426.496mil) on Top Layer And Pad Y1-3(1753.307mil,-363.504mil) on Top Layer [Top Solder] Mask Sliver [9.717mil]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>

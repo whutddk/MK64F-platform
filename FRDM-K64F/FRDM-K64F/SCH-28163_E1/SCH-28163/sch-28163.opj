@@ -1,0 +1,145 @@
+(ExpressProject ""
+  (ProjectVersion "19981106")
+  (ProjectType "PCB")
+  (Folder "Design Resources"
+    (Folder "Library")
+    (File ".\sch-28163.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (DOCKED "TRUE")
+    (DOCKING_POSITION "59420")
+    (NoModify)
+    (BOM_Scope "0")
+    (BOM_Mode "0")
+    (BOM_Report_File
+       "D:\PROFILES\B36609\MY DOCUMENTS\PROJECTS\FREEDOM\FRDM-K64\REV_E\SCH-28163.BOM")
+    (BOM_Merge_Include "FALSE")
+    (BOM_Property_Combine_7.0
+       "{Item}\t{Quantity}\t{AGILE_PN}\t{ASSY_OPT}\t{}\t{PRE_APN}\t{Reference}")
+    (BOM_Header "Item\tQuantity\tAgilePN\tASSY_OPT\tFIND#\tPRE_APN\tReference")
+    (BOM_Include_File
+       "D:\PROFILES\B36609\MY DOCUMENTS\PROJECTS\FREEDOM\FRDM-K64\REV_E\SCH-28163.INC")
+    (BOM_Include_File_Combine_7.0 "{Item}\t{Quantity}\t{Reference}\t{Value}")
+    (BOM_One_Part_Per_Line "FALSE")
+    (Open_BOM_in_Excel "FALSE")
+    (BOM_View_Output "TRUE")
+    (Netlist_TAB "0"))
+  (Folder "Outputs"
+    (File ".\sch-28163.bom"
+      (Type "Report"))
+    (File ".\allegro\pstxnet.dat"
+      (Type "Report")
+      (DisplayName "pstxnet.dat"))
+    (File ".\allegro\pstxprt.dat"
+      (Type "Report")
+      (DisplayName "pstxprt.dat"))
+    (File ".\allegro\pstchip.dat"
+      (Type "Report")
+      (DisplayName "pstchip.dat")))
+  (Folder "Referenced Projects")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources" ".\sch-28163.dsn")
+      (Path "Design Resources" ".\sch-28163.dsn" "SCHEMATIC1")
+      (Path "Outputs")
+      (Select "Design Resources" ".\sch-28163.dsn"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 0 227 0 999"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -4 -30 110 1174 145 685")
+        (Scroll "1271 1672")
+        (Zoom "168")
+        (Occurrence "/"))
+      (Path
+         "D:\PROFILES\B36609\MY DOCUMENTS\PROJECTS\FREEDOM\FRDM-K64\REV_E\SCH-28163.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "7. RMII"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -4 -30 132 1196 174 714")
+        (Scroll "2015 1852")
+        (Zoom "164")
+        (Occurrence "/"))
+      (Path
+         "D:\PROFILES\B36609\MY DOCUMENTS\PROJECTS\FREEDOM\FRDM-K64\REV_E\SCH-28163.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "3. K64F MCU"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -4 -30 0 851 0 460")
+        (Scroll "0 0")
+        (Zoom "41")
+        (Occurrence "/"))
+      (Path
+         "D:\PROFILES\B36609\MY DOCUMENTS\PROJECTS\FREEDOM\FRDM-K64\REV_E\SCH-28163.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "5. ARDUINO SHIELDS&COMBO SENSOR"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -4 -30 22 873 29 489")
+        (Scroll "2344 291")
+        (Zoom "124")
+        (Occurrence "/"))
+      (Path
+         "D:\PROFILES\B36609\MY DOCUMENTS\PROJECTS\FREEDOM\FRDM-K64\REV_E\SCH-28163.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "4 OpenSDA interface"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -4 -30 44 895 58 518")
+        (Scroll "2271 455")
+        (Zoom "168")
+        (Occurrence "/"))
+      (Path
+         "D:\PROFILES\B36609\MY DOCUMENTS\PROJECTS\FREEDOM\FRDM-K64\REV_E\SCH-28163.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "1. Title Page"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -4 -30 22 873 29 489")
+        (Scroll "0 0")
+        (Zoom "44")
+        (Occurrence "/"))
+      (Path
+         "D:\PROFILES\B36609\MY DOCUMENTS\PROJECTS\FREEDOM\FRDM-K64\REV_E\SCH-28163.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "6. SD_Card"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -4 -30 44 1210 58 518")
+        (Scroll "0 0")
+        (Zoom "164")
+        (Occurrence "/"))
+      (Path
+         "D:\PROFILES\B36609\MY DOCUMENTS\PROJECTS\FREEDOM\FRDM-K64\REV_E\SCH-28163.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "2. Block Diagram")))
+  (ISPCBBASICLICENSE "false")
+  (PartMRUSelector
+    (CONN_RJ45_8P_SH
+      (FullPartName "CONN_RJ45_8P_SH.Normal")
+      (LibraryName "Q:\ORCADCIS\SYMBOLS\FCL_CONNECTOR2.OLB")
+      (DeviceIndex "0"))
+    (CAP_NP
+      (FullPartName "CAP_NP.Normal")
+      (LibraryName "Q:\ORCADCIS\SYMBOLS\FCL_CAPACITOR.OLB")
+      (DeviceIndex "0"))
+    (RES
+      (FullPartName "RES.Normal")
+      (LibraryName "Q:\ORCADCIS\SYMBOLS\FCL_RESISTOR.OLB")
+      (DeviceIndex "0")))
+  (MPSSessionName "b36609"))
