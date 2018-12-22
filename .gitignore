@@ -1,0 +1,10 @@
+*.rar
+*.zip
+*.LOG
+*.BOM
+*.CSV
+*.drc
+*.exe
+FRDM-K64F/FRDM-K64F/
+!doc/designDoc/0.2/FT2232使用/*
+*/Project Outputs for FPV0.2.1/

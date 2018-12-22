@@ -1,0 +1,14 @@
+---------------------------------------------------------------------------
+NCDrill File Report For: FPV0.2.1.PcbDoc   2018/3/4  19:24:28
+---------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII RoundHoles File : FPV0.2.1.TXT
+
+Tool         Hole Size           Hole Type     Hole Count Plated       Tool Travel
+---------------------------------------------------------------------------
+T1        39.37mil (1mm)           Round          44               6.57 Inch (166.86 mm)
+---------------------------------------------------------------------------
+Totals                                            44               6.57 Inch (166.86 mm)
+
+Total Processing Time (hh:mm:ss) : 00:00:04

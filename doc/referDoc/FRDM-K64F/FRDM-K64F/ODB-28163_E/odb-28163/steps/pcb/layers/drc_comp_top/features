@@ -1,0 +1,44 @@
+#
+#Num Features
+#
+F 2
+
+#
+#Units
+#
+U INCH
+
+#
+#Feature symbol names
+#
+$0 rect65x365 I
+
+#
+#Feature attribute names
+#
+@0 .drc_comp_keepin
+@1 .drc_comp_keepout
+@2 .drc_ref_des
+@3 .drc_assembly_lyrs
+
+#
+#Feature attribute text strings
+#
+&0 J199
+
+#
+#Layer features
+#
+S P 0;0,3=2
+OB -0.5735 1.739 I
+OC -0.3385 1.974 -0.3385 1.739 Y
+OS 2.3615 1.974
+OC 2.5965 1.739 2.3615 1.739 Y
+OS 2.5965 0.139
+OC 2.3615 -0.096 2.3615 0.139 Y
+OS -0.3385 -0.096
+OC -0.5735 0.139 -0.3385 0.139 Y
+OS -0.5735 1.739
+OE
+SE
+P 2.2808 1.3219 0 P 0 8 0;1,2=0,3=0
