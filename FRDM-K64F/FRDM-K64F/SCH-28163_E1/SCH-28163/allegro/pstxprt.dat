@@ -1,0 +1,2742 @@
+FILE_TYPE = EXPANDEDPARTLIST;
+{ Using PSTWRITER 16.6.0 d001Sep-03-2014 at 16:16:48 }
+DIRECTIVES
+ PST_VERSION='PST_HDL_CENTRIC_VERSION_0';
+ ROOT_DRAWING='SCH-28163';
+ POST_TIME='Sep 14 2013 00:32:48';
+ SOURCE_TOOL='CAPTURE_WRITER';
+END_DIRECTIVES;
+
+PART_NAME
+ C1 'CAP_NP_CC0402_25_DISCRETE_0.7MM':
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_1e+06pF_2_1';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20653328@FCL_CAPACITOR.CAP_NP.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20653328@fcl_capacitor.\cap_np.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page4_ins20653328@fcl_capacitor.\cap_np.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_1e+06pF_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C10 'CAP_NP_CC0402_25_DISCRETE_0.64M':
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_100000pF_2_1';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20653510@FCL_CAPACITOR.CAP_NP.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20653510@fcl_capacitor.\cap_np.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page4_ins20653510@fcl_capacitor.\cap_np.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_100000pF_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C11 'CAP_NP_CC0603_OV_DISCRETE_1.25M':
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_2.2e+06pF_2_1';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20653358@FCL_CAPACITOR.CAP_NP.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20653358@fcl_capacitor.\cap_np.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page4_ins20653358@fcl_capacitor.\cap_np.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_2.2e+06pF_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C12 'CAP_NP_CC0402_25_DISCRETE_0.6MM':
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_1e+06pF_2_1';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20653252@FCL_CAPACITOR.CAP_NP.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20653252@fcl_capacitor.\cap_np.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page4_ins20653252@fcl_capacitor.\cap_np.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_1e+06pF_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C13 'CAP_NP_CC0402_25_DISCRETE_0.6_1':
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_100000pF_2_1';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20314567@FCL_CAPACITOR.CAP_NP.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20314567@fcl_capacitor.\cap_np.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page5_ins20314567@fcl_capacitor.\cap_np.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_100000pF_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C14 'CAP_NP_CC0402_25_DISCRETE_0.6_1':
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_100000pF_2_1';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20308392@FCL_CAPACITOR.CAP_NP.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20308392@fcl_capacitor.\cap_np.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page5_ins20308392@fcl_capacitor.\cap_np.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_100000pF_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C15 'CAP_NP_CC0603_OV_DISCRETE_1MM_1':
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_1e+07pF_2_1';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20653500@FCL_CAPACITOR.CAP_NP.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20653500@fcl_capacitor.\cap_np.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page4_ins20653500@fcl_capacitor.\cap_np.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_1e+07pF_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C16 'CAP_NP_CC0402_25_DISCRETE_0.64M':
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_100000pF_2_1';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20654063@FCL_CAPACITOR.CAP_NP.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20654063@fcl_capacitor.\cap_np.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page4_ins20654063@fcl_capacitor.\cap_np.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_100000pF_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C17 'CAP_NP_CC0402_25_DISCRETE_0.65M':
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_4.7e+06pF_2_1';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20652828@FCL_CAPACITOR.CAP_NP.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20652828@fcl_capacitor.\cap_np.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page4_ins20652828@fcl_capacitor.\cap_np.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_4.7e+06pF_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C18 'CAP_NP_CC0402_25_DISCRETE_0.64M':
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_100000pF_2_1';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20653763@FCL_CAPACITOR.CAP_NP.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20653763@fcl_capacitor.\cap_np.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page4_ins20653763@fcl_capacitor.\cap_np.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_100000pF_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C19 'CAP_NP_CC0603_OV_DISCRETE_0.90M':
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_18.000000pF_2_1',
+ BOM_IGNORE='DNP';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20662134@FCL_CAPACITOR.CAP_NP.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20662134@fcl_capacitor.\cap_np.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page4_ins20662134@fcl_capacitor.\cap_np.normal\(chips)',
+ BOM_IGNORE='DNP',
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_18.000000pF_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C2 'CAP_NP_CC0402_25_DISCRETE_0.55M':;
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20747932@FCL_CAPACITOR.CAP_NP.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20747932@fcl_capacitor.\cap_np.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page4_ins20747932@fcl_capacitor.\cap_np.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C21 'CAP_NP_CC0603_OV_DISCRETE_1.016':
+ ROOM='RMII_PHY',
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_4.7e+06pF_2_1';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20399256@FCL_CAPACITOR.CAP_NP.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20399256@fcl_capacitor.\cap_np.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page7_ins20399256@fcl_capacitor.\cap_np.normal\(chips)',
+ ROOM='RMII_PHY',
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_4.7e+06pF_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C22 'CAP_NP_CC0402_25_DISCRETE_0.635':
+ ROOM='RMII_PHY',
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_100000pF_2_1';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20399373@FCL_CAPACITOR.CAP_NP.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20399373@fcl_capacitor.\cap_np.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page7_ins20399373@fcl_capacitor.\cap_np.normal\(chips)',
+ ROOM='RMII_PHY',
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_100000pF_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C23 'CAP_NP_CC0402_25_DISCRETE_0.65M':
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_4.7e+06pF_2_1';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20654496@FCL_CAPACITOR.CAP_NP.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20654496@fcl_capacitor.\cap_np.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page4_ins20654496@fcl_capacitor.\cap_np.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_4.7e+06pF_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C24 'CAP_NP_CC0402_25_DISCRETE_0.635':
+ ROOM='RMII_PHY',
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_100000pF_2_1';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20399355@FCL_CAPACITOR.CAP_NP.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20399355@fcl_capacitor.\cap_np.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page7_ins20399355@fcl_capacitor.\cap_np.normal\(chips)',
+ ROOM='RMII_PHY',
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_100000pF_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C25 'CAP_NP_CC0402_25_DISCRETE_0.64M':
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_100000pF_2_1';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20572147@FCL_CAPACITOR.CAP_NP.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20572147@fcl_capacitor.\cap_np.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page3_ins20572147@fcl_capacitor.\cap_np.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_100000pF_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C26 'CAP_NP_CC0402_25_DISCRETE_0.635':
+ ROOM='RMII_PHY',
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_100000pF_2_1';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20399101@FCL_CAPACITOR.CAP_NP.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20399101@fcl_capacitor.\cap_np.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page7_ins20399101@fcl_capacitor.\cap_np.normal\(chips)',
+ ROOM='RMII_PHY',
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_100000pF_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C27 'CAP_NP_CC0402_25_DISCRETE_0.64M':
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_100000pF_2_1';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20572139@FCL_CAPACITOR.CAP_NP.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20572139@fcl_capacitor.\cap_np.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page3_ins20572139@fcl_capacitor.\cap_np.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_100000pF_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C28 'CAP_NP_CC0603_OV_DISCRETE_1.0MM':
+ ROOM='RMII_PHY',
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_1e+06pF_2_1';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20399284@FCL_CAPACITOR.CAP_NP.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20399284@fcl_capacitor.\cap_np.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page7_ins20399284@fcl_capacitor.\cap_np.normal\(chips)',
+ ROOM='RMII_PHY',
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_1e+06pF_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C29 'CAP_NP_CC0402_25_DISCRETE_0.55':
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_24.000000pF_2_1';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20638928@FCL_CAPACITOR.CAP_NP.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20638928@fcl_capacitor.\cap_np.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page7_ins20638928@fcl_capacitor.\cap_np.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_24.000000pF_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C3 'CAP_NP_CC0402_25_DISCRETE_0.6_1':
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_100000pF_2_1';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20311193@FCL_CAPACITOR.CAP_NP.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20311193@fcl_capacitor.\cap_np.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page5_ins20311193@fcl_capacitor.\cap_np.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_100000pF_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C30 'CAP_NP_CC0603_OV_DISCRETE_1MM_2':
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_1e+07pF_2_1',
+ BOM_IGNORE='DNP';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20513786@FCL_CAPACITOR.CAP_NP.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20513786@fcl_capacitor.\cap_np.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page6_ins20513786@fcl_capacitor.\cap_np.normal\(chips)',
+ BOM_IGNORE='DNP',
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_1e+07pF_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C31 'CAP_NP_CC0402_25_DISCRETE_0.6_2':
+ ROOM='RMII_PHY',
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_100000pF_2_1',
+ BOM_IGNORE='DNP';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20399029@FCL_CAPACITOR.CAP_NP.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20399029@fcl_capacitor.\cap_np.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page7_ins20399029@fcl_capacitor.\cap_np.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_100000pF_2_1',
+ BOM_IGNORE='DNP',
+ ROOM='RMII_PHY',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C32 'CAP_NP_CC0402_25_DISCRETE_0.6_1':
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_100000pF_2_1';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20592693@FCL_CAPACITOR.CAP_NP.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20592693@fcl_capacitor.\cap_np.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page6_ins20592693@fcl_capacitor.\cap_np.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_100000pF_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C33 'CAP_NP_CC0603_OV_DISCRETE_1MM_2':
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_1e+07pF_1_2',
+ BOM_IGNORE='DNP';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20416620@FCL_CAPACITOR.CAP_NP.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20416620@fcl_capacitor.\cap_np.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page3_ins20416620@fcl_capacitor.\cap_np.normal\(chips)',
+ BOM_IGNORE='DNP',
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_1e+07pF_1_2',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C34 'CAP_NP_CC0603_OV_DISCRETE_1.0_1':
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_1e+07pF_2_1';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20614579@FCL_CAPACITOR.CAP_NP.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20614579@fcl_capacitor.\cap_np.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page7_ins20614579@fcl_capacitor.\cap_np.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_1e+07pF_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C35 'CAP_NP_CC0402_25_DISCRETE_0.55':
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_24.000000pF_2_1';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20638920@FCL_CAPACITOR.CAP_NP.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20638920@fcl_capacitor.\cap_np.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page7_ins20638920@fcl_capacitor.\cap_np.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_24.000000pF_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C36 'CAP_NP_CC0402_25_DISCRETE_0.6_2':
+ ROOM='RMII_PHY',
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_100000pF_2_1',
+ BOM_IGNORE='DNP';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20597630@FCL_CAPACITOR.CAP_NP.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20597630@fcl_capacitor.\cap_np.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page7_ins20597630@fcl_capacitor.\cap_np.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_100000pF_2_1',
+ ROOM='RMII_PHY',
+ BOM_IGNORE='DNP',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C37 'CAP_NP_CC0402_25_DISCRETE_0.64M':
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_100000pF_2_1';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20572219@FCL_CAPACITOR.CAP_NP.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20572219@fcl_capacitor.\cap_np.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page3_ins20572219@fcl_capacitor.\cap_np.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_100000pF_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C38 'CAP_NP_CC0603_OV_DISCRETE_0.9MM':
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_100.000000pF_2_1';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20399548@FCL_CAPACITOR.CAP_NP.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20399548@fcl_capacitor.\cap_np.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page7_ins20399548@fcl_capacitor.\cap_np.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_100.000000pF_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C39 'CAP_NP_CC0402_25_DISCRETE_0.6_2':
+ ROOM='RMII_PHY',
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_100000pF_2_1';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20609484@FCL_CAPACITOR.CAP_NP.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20609484@fcl_capacitor.\cap_np.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page7_ins20609484@fcl_capacitor.\cap_np.normal\(chips)',
+ ROOM='RMII_PHY',
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_100000pF_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C4 'CAP_NP_CC0402_25_DISCRETE_0.6_1':
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_100000pF_2_1';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20312365@FCL_CAPACITOR.CAP_NP.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20312365@fcl_capacitor.\cap_np.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page5_ins20312365@fcl_capacitor.\cap_np.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_100000pF_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C40 'CAP_NP_CC0603_OV_DISCRETE_1.25M':
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_2.2e+06pF_2_1';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20520434@FCL_CAPACITOR.CAP_NP.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20520434@fcl_capacitor.\cap_np.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page5_ins20520434@fcl_capacitor.\cap_np.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_2.2e+06pF_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C41 'CAP_NP_CC0603_OV_DISCRETE_1MM_2':
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_1e+07pF_2_1';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20658467@FCL_CAPACITOR.CAP_NP.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20658467@fcl_capacitor.\cap_np.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page5_ins20658467@fcl_capacitor.\cap_np.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_1e+07pF_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C42 'CAP_NP_CC0402_25_DISCRETE_0.64M':
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_100000pF_2_1';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20572067@FCL_CAPACITOR.CAP_NP.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20572067@fcl_capacitor.\cap_np.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page3_ins20572067@fcl_capacitor.\cap_np.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_100000pF_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C43 'CAP_NP_CC0402_25_DISCRETE_0.64M':
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_100000pF_1_2';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20572095@FCL_CAPACITOR.CAP_NP.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20572095@fcl_capacitor.\cap_np.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page3_ins20572095@fcl_capacitor.\cap_np.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_100000pF_1_2',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C44 'CAP_NP_CC0402_25_DISCRETE_0.5_1':
+ BOM_IGNORE='DNP';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20734913@FCL_CAPACITOR.CAP_NP.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20734913@fcl_capacitor.\cap_np.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page3_ins20734913@fcl_capacitor.\cap_np.normal\(chips)',
+ BOM_IGNORE='DNP',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C45 'CAP_NP_CC0402_25_DISCRETE_0.6MM':
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_1e+06pF_2_1';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20561639@FCL_CAPACITOR.CAP_NP.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20561639@fcl_capacitor.\cap_np.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page3_ins20561639@fcl_capacitor.\cap_np.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_1e+06pF_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C46 'CAP_NP_CC0402_25_DISCRETE_0.64M':
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_100000pF_2_1';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20572155@FCL_CAPACITOR.CAP_NP.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20572155@fcl_capacitor.\cap_np.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page3_ins20572155@fcl_capacitor.\cap_np.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_100000pF_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C47 'CAP_NP_CC0402_25_DISCRETE_0.64M':
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_100000pF_2_1';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20572057@FCL_CAPACITOR.CAP_NP.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20572057@fcl_capacitor.\cap_np.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page3_ins20572057@fcl_capacitor.\cap_np.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_100000pF_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C48 'CAP_NP_CC0402_25_DISCRETE_0.5_1':
+ BOM_IGNORE='DNP';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20734926@FCL_CAPACITOR.CAP_NP.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20734926@fcl_capacitor.\cap_np.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page3_ins20734926@fcl_capacitor.\cap_np.normal\(chips)',
+ BOM_IGNORE='DNP',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C49 'CAP_NP_CC0402_25_DISCRETE_0.64M':
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_100000pF_2_1';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20572175@FCL_CAPACITOR.CAP_NP.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20572175@fcl_capacitor.\cap_np.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page3_ins20572175@fcl_capacitor.\cap_np.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_100000pF_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C5 'CAP_NP_CC0603_OV_DISCRETE_0.9 M':
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_4.7e+06pF_2_1';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20360675@FCL_CAPACITOR.CAP_NP.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20360675@fcl_capacitor.\cap_np.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page5_ins20360675@fcl_capacitor.\cap_np.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_4.7e+06pF_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C50 'CAP_NP_CC0603_OV_DISCRETE_1.0_2':
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_1e+07pF_2_1',
+ BOM_IGNORE='DNP';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20520371@FCL_CAPACITOR.CAP_NP.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20520371@fcl_capacitor.\cap_np.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page5_ins20520371@fcl_capacitor.\cap_np.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_1e+07pF_2_1',
+ BOM_IGNORE='DNP',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C51 'CAP_NP_CC0603_OV_DISCRETE_1.0_2':
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_1e+07pF_2_1';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20108995@FCL_CAPACITOR.CAP_NP.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20108995@fcl_capacitor.\cap_np.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page5_ins20108995@fcl_capacitor.\cap_np.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_1e+07pF_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C52 'CAP_NP_CC0603_OV_DISCRETE_1.0_2':
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_1e+07pF_2_1',
+ BOM_IGNORE='DNP';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20520380@FCL_CAPACITOR.CAP_NP.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20520380@fcl_capacitor.\cap_np.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page5_ins20520380@fcl_capacitor.\cap_np.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_1e+07pF_2_1',
+ BOM_IGNORE='DNP',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C53 'CAP_NP_CC0603_OV_DISCRETE_1.0_2':
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_1e+07pF_2_1',
+ BOM_IGNORE='DNP';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20520485@FCL_CAPACITOR.CAP_NP.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20520485@fcl_capacitor.\cap_np.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page5_ins20520485@fcl_capacitor.\cap_np.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_1e+07pF_2_1',
+ BOM_IGNORE='DNP',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C54 'CAP_NP_CC0603_OV_DISCRETE_1.0_2':
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_1e+07pF_2_1',
+ BOM_IGNORE='DNP';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20520391@FCL_CAPACITOR.CAP_NP.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20520391@fcl_capacitor.\cap_np.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page5_ins20520391@fcl_capacitor.\cap_np.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_1e+07pF_2_1',
+ BOM_IGNORE='DNP',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C55 'CAP_NP_CC0402_25_DISCRETE_0.6_1':
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_100000pF_2_1';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20736454@FCL_CAPACITOR.CAP_NP.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20736454@fcl_capacitor.\cap_np.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page5_ins20736454@fcl_capacitor.\cap_np.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_100000pF_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C56 'CAP_NP_CC0402_25_DISCRETE_0.6_1':
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_100000pF_2_1';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20736476@FCL_CAPACITOR.CAP_NP.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20736476@fcl_capacitor.\cap_np.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page5_ins20736476@fcl_capacitor.\cap_np.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_100000pF_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C57 'CAP_NP_CC0402_25_DISCRETE_0.6_1':
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_100000pF_2_1';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20736734@FCL_CAPACITOR.CAP_NP.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20736734@fcl_capacitor.\cap_np.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page6_ins20736734@fcl_capacitor.\cap_np.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_100000pF_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C58 'CAP_NP_CC0402_25_DISCRETE_0.6_1':
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_100000pF_2_1';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20736869@FCL_CAPACITOR.CAP_NP.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20736869@fcl_capacitor.\cap_np.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page6_ins20736869@fcl_capacitor.\cap_np.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_100000pF_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C59 'CAP_NP_CC0402_25_DISCRETE_0.5_2':;
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20756045@FCL_CAPACITOR.CAP_NP.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20756045@fcl_capacitor.\cap_np.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page3_ins20756045@fcl_capacitor.\cap_np.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C6 'CAP_NP_CC0402_25_DISCRETE_0.6_3':
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_22.000000pF_2_1',
+ BOM_IGNORE='DNP';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20653309@FCL_CAPACITOR.CAP_NP.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20653309@fcl_capacitor.\cap_np.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page4_ins20653309@fcl_capacitor.\cap_np.normal\(chips)',
+ BOM_IGNORE='DNP',
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_22.000000pF_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C60 'CAP_NP_CC0402_25_DISCRETE_0.6_2':
+ ROOM='RMII_PHY',
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_100000pF_2_1';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20821287@FCL_CAPACITOR.CAP_NP.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20821287@fcl_capacitor.\cap_np.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page7_ins20821287@fcl_capacitor.\cap_np.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_100000pF_2_1',
+ ROOM='RMII_PHY',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C61 'CAP_NP_CC0402_25_DISCRETE_0.6_2':
+ ROOM='RMII_PHY',
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_100000pF_2_1';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20821469@FCL_CAPACITOR.CAP_NP.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20821469@fcl_capacitor.\cap_np.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page7_ins20821469@fcl_capacitor.\cap_np.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_100000pF_2_1',
+ ROOM='RMII_PHY',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C7 'CAP_NP_CC0402_25_DISCRETE_0.64M':
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_100000pF_2_1';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20654506@FCL_CAPACITOR.CAP_NP.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20654506@fcl_capacitor.\cap_np.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page4_ins20654506@fcl_capacitor.\cap_np.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_100000pF_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C8 'CAP_NP_CC0402_25_DISCRETE_0.64M':
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_100000pF_2_1';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20653926@FCL_CAPACITOR.CAP_NP.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20653926@fcl_capacitor.\cap_np.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page4_ins20653926@fcl_capacitor.\cap_np.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_100000pF_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C9 'CAP_NP_CC0402_25_DISCRETE_0.6_3':
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_22.000000pF_2_1',
+ BOM_IGNORE='DNP';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20653296@FCL_CAPACITOR.CAP_NP.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20653296@fcl_capacitor.\cap_np.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page4_ins20653296@fcl_capacitor.\cap_np.normal\(chips)',
+ BOM_IGNORE='DNP',
+ SIGNAL_MODEL='DEFAULT_CAPACITOR_22.000000pF_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D1 'LED_LED_0603_IC_0.9MM_370-75079':;
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20653972@FCL_OPTICAL.LED.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20653972@fcl_optical.\led.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page4_ins20653972@fcl_optical.\led.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D10 'DIODE_SCHTKY_POWERDI-123_3MMX2M':;
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20658354@FCL_SEMICONDUCTOR.DIODE_SCHTKY.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20658354@fcl_semiconductor.\diode_schtky.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page5_ins20658354@fcl_semiconductor.\diode_schtky.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D11 'DIODE_SCHTKY_POWERDI-123_3MMX2M':;
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20738569@FCL_SEMICONDUCTOR.DIODE_SCHTKY.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20738569@fcl_semiconductor.\diode_schtky.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page5_ins20738569@fcl_semiconductor.\diode_schtky.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D12 'CLV1A_LED_4P_LED4_3P4X3MM_SMT_I':;
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20517926@FCL_OPTICAL.CLV1A_LED_4P.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20517926@fcl_optical.\clv1a_led_4p.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page3_ins20517926@fcl_optical.\clv1a_led_4p.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D13 'DIODE_SCHTKY_POWERDI-123_3MMX2M':
+ BOM_IGNORE='DNP';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20661429@FCL_SEMICONDUCTOR.DIODE_SCHTKY.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20661429@fcl_semiconductor.\diode_schtky.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page5_ins20661429@fcl_semiconductor.\diode_schtky.normal\(chips)',
+ BOM_IGNORE='DNP',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D2 'LED_LED_0603_IC_0.67MM_370-7656':;
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20653427@FCL_OPTICAL.LED.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20653427@fcl_optical.\led.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page4_ins20653427@fcl_optical.\led.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D3 'DUALDIODE_CA_SOT23_SOT323_3P_IC':;
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20655022@FCL_SEMICONDUCTOR.DUALDIODE_CA_SOT23.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20655022@fcl_semiconductor.\dualdiode_ca_sot23.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page7_ins20655022@fcl_semiconductor.\dualdiode_ca_sot23.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D4 'ZDIODE_SOD-323-A_IC_1.1MM_480-7':
+ BOM_IGNORE='DNP';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20572233@FCL_SEMICONDUCTOR.ZDIODE.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20572233@fcl_semiconductor.\zdiode.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page3_ins20572233@fcl_semiconductor.\zdiode.normal\(chips)',
+ BOM_IGNORE='DNP',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D5 'DIODE_SCHTKY_POWERDI-123_3MMX2M':;
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20658763@FCL_SEMICONDUCTOR.DIODE_SCHTKY.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20658763@fcl_semiconductor.\diode_schtky.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page5_ins20658763@fcl_semiconductor.\diode_schtky.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D6 'DIODE_SCHTKY_POWERDI-123_3MMX2M':;
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20658370@FCL_SEMICONDUCTOR.DIODE_SCHTKY.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20658370@fcl_semiconductor.\diode_schtky.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page5_ins20658370@fcl_semiconductor.\diode_schtky.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D7 'DIODE_SCHTKY_POWERDI-123_3MMX2M':;
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20658755@FCL_SEMICONDUCTOR.DIODE_SCHTKY.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20658755@fcl_semiconductor.\diode_schtky.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page5_ins20658755@fcl_semiconductor.\diode_schtky.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D8 'DIODE_SCHTKY_POWERDI-123_3MMX2M':;
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20658362@FCL_SEMICONDUCTOR.DIODE_SCHTKY.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20658362@fcl_semiconductor.\diode_schtky.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page5_ins20658362@fcl_semiconductor.\diode_schtky.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D9 'DIODE_SCHTKY_POWERDI-123_3MMX2M':;
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20658439@FCL_SEMICONDUCTOR.DIODE_SCHTKY.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20658439@fcl_semiconductor.\diode_schtky.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page5_ins20658439@fcl_semiconductor.\diode_schtky.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J1 'CONN_HDR_8X2_HDR208_ESQ_SKT_IO_':;
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20763772@FCL_CONNECTOR.CONN_HDR_8X2.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20763772@fcl_connector.\conn_hdr_8x2.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page5_ins20763772@fcl_connector.\conn_hdr_8x2.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J10 'CONN_HDR_5X2_HDR_5X2_FTSH_TH_NS':;
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20653399@FCL_CONNECTOR.CONN_HDR_5X2.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20653399@fcl_connector.\conn_hdr_5x2.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page4_ins20653399@fcl_connector.\conn_hdr_5x2.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J11 'CONN_HDR_2X1_SH_HDR102_BOTTOM_I':
+ BOM_IGNORE='DNP';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20238792@FCL_CONNECTOR.CONN_HDR_2X1.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20238792@fcl_connector.\conn_hdr_2x1.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page3_ins20238792@fcl_connector.\conn_hdr_2x1.normal\(chips)',
+ BOM_IGNORE='DNP',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J12 'CONN_HDR_2X1_SH_HDR102_BOTTOM_I':
+ BOM_IGNORE='DNP';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20761942@FCL_CONNECTOR.CONN_HDR_2X1.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20761942@fcl_connector.\conn_hdr_2x1.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page4_ins20761942@fcl_connector.\conn_hdr_2x1.normal\(chips)',
+ BOM_IGNORE='DNP',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J13 'CONN_RJ45_8P_SH_CON_RJ45_8P_2P5':;
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20821545@FCL_CONNECTOR2.CONN_RJ45_8P_SH.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20821545@fcl_connector2.\conn_rj45_8p_sh.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page7_ins20821545@fcl_connector2.\conn_rj45_8p_sh.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J14 'CONN_HDR_2X1_HDR102_IO_8.58MM_2':;
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20763026@FCL_CONNECTOR.CONN_HDR_2X1.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20763026@fcl_connector.\conn_hdr_2x1.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page7_ins20763026@fcl_connector.\conn_hdr_2x1.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J15 'CON8_SDCARD_SW_CON8_SDCARD_PUSH':;
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20513631@FCL_CONNECTOR.CON8_SDCARD_SW.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20513631@fcl_connector.\con8_sdcard_sw.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page6_ins20513631@fcl_connector.\con8_sdcard_sw.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J16 'CONN_HDR_2X1_SH_HDR102_BOTTOM_I':
+ BOM_IGNORE='DNP';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20492515@FCL_CONNECTOR.CONN_HDR_2X1.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20492515@fcl_connector.\conn_hdr_2x1.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page3_ins20492515@fcl_connector.\conn_hdr_2x1.normal\(chips)',
+ BOM_IGNORE='DNP',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J17 'CONN_HDR_2X1_HDR102_IO_8.58MM_2':
+ BOM_IGNORE='DNP';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20763059@FCL_CONNECTOR.CONN_HDR_2X1.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20763059@fcl_connector.\conn_hdr_2x1.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page7_ins20763059@fcl_connector.\conn_hdr_2x1.normal\(chips)',
+ BOM_IGNORE='DNP',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J18 'CONN_HDR_2X1_HDR102_IO_8.58MM_2':
+ BOM_IGNORE='DNP';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20762587@FCL_CONNECTOR.CONN_HDR_2X1.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20762587@fcl_connector.\conn_hdr_2x1.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page5_ins20762587@fcl_connector.\conn_hdr_2x1.normal\(chips)',
+ BOM_IGNORE='DNP',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J19 'CONN_HDR_2X1_SH_HDR102_BOTTOM_I':
+ BOM_IGNORE='DNP';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20262243@FCL_CONNECTOR.CONN_HDR_2X1.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20262243@fcl_connector.\conn_hdr_2x1.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page5_ins20262243@fcl_connector.\conn_hdr_2x1.normal\(chips)',
+ BOM_IGNORE='DNP',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J199 'CONN_HDR_4X1_CON1X4_100_TH_RA_I':
+ BOM_IGNORE='DNP';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20625662@FCL_CONNECTOR.CONN_HDR_4X1.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20625662@fcl_connector.\conn_hdr_4x1.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page6_ins20625662@fcl_connector.\conn_hdr_4x1.normal\(chips)',
+ BOM_IGNORE='DNP',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J2 'CONN_HDR_10X2_HDR210_ESQ_SKT_IO':;
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20765890@FCL_CONNECTOR.CONN_HDR_10X2.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20765890@fcl_connector.\conn_hdr_10x2.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page5_ins20765890@fcl_connector.\conn_hdr_10x2.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J20 'CONN_HDR_2X1_SH_HDR102_BOTTOM_I':
+ BOM_IGNORE='DNP';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20798441@FCL_CONNECTOR.CONN_HDR_2X1.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20798441@fcl_connector.\conn_hdr_2x1.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page5_ins20798441@fcl_connector.\conn_hdr_2x1.normal\(chips)',
+ BOM_IGNORE='DNP',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J21 'CONN_HDR_2X1_HDR102_IO_8.58MM_2':;
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20762733@FCL_CONNECTOR.CONN_HDR_2X1.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20762733@fcl_connector.\conn_hdr_2x1.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page3_ins20762733@fcl_connector.\conn_hdr_2x1.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J22 'USB_MINI_AB_RECEPTACLE_CON5_MIC':;
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20756295@FCL_CONNECTOR.USB_MINI_AB_RECEPTACLE.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20756295@fcl_connector.\usb_mini_ab_receptacle.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page3_ins20756295@fcl_connector.\usb_mini_ab_receptacle.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J23 'CONN_HDR_2X1_SH_HDR102_BOTTOM_I':
+ BOM_IGNORE='DNP';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20572117@FCL_CONNECTOR.CONN_HDR_2X1.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20572117@fcl_connector.\conn_hdr_2x1.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page3_ins20572117@fcl_connector.\conn_hdr_2x1.normal\(chips)',
+ BOM_IGNORE='DNP',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J24 'DC POWER JACK_CON_JACK_PJ1_022_':
+ BOM_IGNORE='DNP';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20658430@FCL_CONNECTOR.DC POWER JACK.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20658430@fcl_connector.\dc power jack.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page5_ins20658430@fcl_connector.\dc power jack.normal\(chips)',
+ BOM_IGNORE='DNP',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J25 'CONN_HDR_3X1_HDR103_IO_8.38 MM_':;
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20763197@FCL_CONNECTOR.CONN_HDR_3X1.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20763197@fcl_connector.\conn_hdr_3x1.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page4_ins20763197@fcl_connector.\conn_hdr_3x1.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J26 'USB_MINI_AB_RECEPTACLE_CON5_MIC':;
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20756967@FCL_CONNECTOR.USB_MINI_AB_RECEPTACLE.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20756967@fcl_connector.\usb_mini_ab_receptacle.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page4_ins20756967@fcl_connector.\usb_mini_ab_receptacle.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J27 'CONN_HDR_3X1_HDR103_IO_8.38 MM_':
+ BOM_IGNORE='DNP';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20520310@FCL_CONNECTOR.CONN_HDR_3X1.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20520310@fcl_connector.\conn_hdr_3x1.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page5_ins20520310@fcl_connector.\conn_hdr_3x1.normal\(chips)',
+ BOM_IGNORE='DNP',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J3 'CONN_HDR_8X2_HDR208_ESQ_SKT_IO_':;
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20763907@FCL_CONNECTOR.CONN_HDR_8X2.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20763907@fcl_connector.\conn_hdr_8x2.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page5_ins20763907@fcl_connector.\conn_hdr_8x2.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J4 'CONN_HDR_6X2_HDR206_ESQ_SKT_IO_':;
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20766918@FCL_CONNECTOR.CONN_HDR_6X2.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20766918@fcl_connector.\conn_hdr_6x2.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page5_ins20766918@fcl_connector.\conn_hdr_6x2.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J5 'CONN_HDR_2X1_SH_HDR102_BOTTOM_I':
+ BOM_IGNORE='DNP';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20653016@FCL_CONNECTOR.CONN_HDR_2X1.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20653016@fcl_connector.\conn_hdr_2x1.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page4_ins20653016@fcl_connector.\conn_hdr_2x1.normal\(chips)',
+ BOM_IGNORE='DNP',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J6 'CONN_HDR_4X2_HDR2X4_IO_8.71 MM_':
+ BOM_IGNORE='DNP';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20726330@FCL_CONNECTOR.CONN_HDR_4X2.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20726330@fcl_connector.\conn_hdr_4x2.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page6_ins20726330@fcl_connector.\conn_hdr_4x2.normal\(chips)',
+ BOM_IGNORE='DNP',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J7 'CONN_HDR_2X1_SH_HDR102_BOTTOM_I':
+ BOM_IGNORE='DNP';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20654071@FCL_CONNECTOR.CONN_HDR_2X1.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20654071@fcl_connector.\conn_hdr_2x1.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page4_ins20654071@fcl_connector.\conn_hdr_2x1.normal\(chips)',
+ BOM_IGNORE='DNP',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J8 'CONN_HDR_2X1_SH_HDR102_BOTTOM_I':
+ BOM_IGNORE='DNP';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20761979@FCL_CONNECTOR.CONN_HDR_2X1.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20761979@fcl_connector.\conn_hdr_2x1.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page4_ins20761979@fcl_connector.\conn_hdr_2x1.normal\(chips)',
+ BOM_IGNORE='DNP',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J9 'CONN_HDR_5X2_HDR_5X2_FTSH_TH_NS':;
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20271397@FCL_CONNECTOR.CONN_HDR_5X2.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20271397@fcl_connector.\conn_hdr_5x2.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page3_ins20271397@fcl_connector.\conn_hdr_5x2.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ L1 'BEAD_IND_1608_DISCRETE_0.95MM_1':;
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20757437@FCL_INDUCTOR.BEAD.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20757437@fcl_inductor.\bead.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page4_ins20757437@fcl_inductor.\bead.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ L2 'BEAD_IND_1608_DISCRETE_0.95MM_1':;
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20738428@FCL_INDUCTOR.BEAD.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20738428@fcl_inductor.\bead.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page4_ins20738428@fcl_inductor.\bead.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ L3 'BEAD_0_0603_CC_DISCRETE_0.95MM_':
+ ROOM='RMII_PHY',
+ BOM_IGNORE='DNP';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20399397@FCL_INDUCTOR.BEAD_0.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20399397@fcl_inductor.\bead_0.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page7_ins20399397@fcl_inductor.\bead_0.normal\(chips)',
+ BOM_IGNORE='DNP',
+ ROOM='RMII_PHY',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ L4 'BEAD_IND_1608_DISCRETE_0.95MM_1':;
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20737881@FCL_INDUCTOR.BEAD.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20737881@fcl_inductor.\bead.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page3_ins20737881@fcl_inductor.\bead.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ L5 'BEAD_IND_1608_DISCRETE_0.95MM_1':;
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20757394@FCL_INDUCTOR.BEAD.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20757394@fcl_inductor.\bead.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page3_ins20757394@fcl_inductor.\bead.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R1 'RES_RC0402_25_DISCRETE_0.4MM_47':
+ SIGNAL_MODEL='DEFAULT_RESISTOR_10000OHM_2_1',
+ BOM_IGNORE='DNP';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20459502@FCL_RESISTOR.RES.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20459502@fcl_resistor.\res.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page5_ins20459502@fcl_resistor.\res.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_RESISTOR_10000OHM_2_1',
+ BOM_IGNORE='DNP',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R10 'RES_RC0402_25_DISCRETE_0.45 MM_':
+ SIGNAL_MODEL='DEFAULT_RESISTOR_0.001OHM_2_1',
+ BOM_IGNORE='DNP';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20653707@FCL_RESISTOR.RES.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20653707@fcl_resistor.\res.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page4_ins20653707@fcl_resistor.\res.normal\(chips)',
+ BOM_IGNORE='DNP',
+ SIGNAL_MODEL='DEFAULT_RESISTOR_0.001OHM_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R11 'RES_RC0402_25_DISCRETE_470-3108':
+ SIGNAL_MODEL='DEFAULT_RESISTOR_180000OHM_2_1';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20652630@FCL_RESISTOR.RES.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20652630@fcl_resistor.\res.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page4_ins20652630@fcl_resistor.\res.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_RESISTOR_180000OHM_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R12 'RES_RC0402_25_DISCRETE_0.55 MM_':
+ SIGNAL_MODEL='DEFAULT_RESISTOR_4700OHM_2_1';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20653672@FCL_RESISTOR.RES.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20653672@fcl_resistor.\res.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page4_ins20653672@fcl_resistor.\res.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_RESISTOR_4700OHM_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R13 'RES_RC0402_25_DISCRETE_0.55MM_4':
+ SIGNAL_MODEL='DEFAULT_RESISTOR_10000OHM_2_1';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20653659@FCL_RESISTOR.RES.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20653659@fcl_resistor.\res.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page4_ins20653659@fcl_resistor.\res.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_RESISTOR_10000OHM_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R14 'RES_RC0402_25_DISCRETE_0.55MM_4':
+ SIGNAL_MODEL='DEFAULT_RESISTOR_10000OHM_2_1';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20653864@FCL_RESISTOR.RES.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20653864@fcl_resistor.\res.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page4_ins20653864@fcl_resistor.\res.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_RESISTOR_10000OHM_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R15 'RES_RC0603_OV_DISCRETE_470-7541':
+ SIGNAL_MODEL='DEFAULT_RESISTOR_4700OHM_2_1';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20308666@FCL_RESISTOR.RES.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20308666@fcl_resistor.\res.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page5_ins20308666@fcl_resistor.\res.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_RESISTOR_4700OHM_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R16 'RES_RC0402_25_DISCRETE_0.55MM_4':
+ SIGNAL_MODEL='DEFAULT_RESISTOR_10000OHM_2_1';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20653799@FCL_RESISTOR.RES.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20653799@fcl_resistor.\res.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page4_ins20653799@fcl_resistor.\res.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_RESISTOR_10000OHM_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R17 'RES_RC0603_OV_DISCRETE_470-3029':
+ SIGNAL_MODEL='DEFAULT_RESISTOR_220.000000OHM_2_1';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20653008@FCL_RESISTOR.RES.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20653008@fcl_resistor.\res.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page4_ins20653008@fcl_resistor.\res.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_RESISTOR_220.000000OHM_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R18 'RES_RC0402_25_DISCRETE_470-7539':
+ SIGNAL_MODEL='DEFAULT_RESISTOR_0.001OHM_2_1',
+ BOM_IGNORE='DNP';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20653885@FCL_RESISTOR.RES.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20653885@fcl_resistor.\res.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page4_ins20653885@fcl_resistor.\res.normal\(chips)',
+ BOM_IGNORE='DNP',
+ SIGNAL_MODEL='DEFAULT_RESISTOR_0.001OHM_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R19 'RES_RC0402_25_DISCRETE_470-7539':
+ SIGNAL_MODEL='DEFAULT_RESISTOR_0.001OHM_2_1';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20654043@FCL_RESISTOR.RES.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20654043@fcl_resistor.\res.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page4_ins20654043@fcl_resistor.\res.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_RESISTOR_0.001OHM_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R2 'RES_RC0402_25_DISCRETE_0.55 M_1':
+ SIGNAL_MODEL='DEFAULT_RESISTOR_100.000000OHM_2_1';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20653852@FCL_RESISTOR.RES.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20653852@fcl_resistor.\res.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page4_ins20653852@fcl_resistor.\res.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_RESISTOR_100.000000OHM_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R20 'RES_RC0402_25_DISCRETE_470-7579':
+ SIGNAL_MODEL='DEFAULT_RESISTOR_33.000000OHM_2_1';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20653160@FCL_RESISTOR.RES.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20653160@fcl_resistor.\res.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page4_ins20653160@fcl_resistor.\res.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_RESISTOR_33.000000OHM_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R21 'RES_RC0402_25_DISCRETE_470-7541':
+ SIGNAL_MODEL='DEFAULT_RESISTOR_10000OHM_2_1';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20653238@FCL_RESISTOR.RES.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20653238@fcl_resistor.\res.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page4_ins20653238@fcl_resistor.\res.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_RESISTOR_10000OHM_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R22 'RES_RC0402_25_DISCRETE_470-7579':
+ SIGNAL_MODEL='DEFAULT_RESISTOR_33.000000OHM_2_1';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20653177@FCL_RESISTOR.RES.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20653177@fcl_resistor.\res.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page4_ins20653177@fcl_resistor.\res.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_RESISTOR_33.000000OHM_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R23 'RES_RC0402_25_DISCRETE_0.55 MM_':
+ SIGNAL_MODEL='DEFAULT_RESISTOR_4700OHM_2_1';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20653812@FCL_RESISTOR.RES.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20653812@fcl_resistor.\res.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page4_ins20653812@fcl_resistor.\res.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_RESISTOR_4700OHM_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R24 'RES_RC0402_25_DISCRETE_0.45 MM_':
+ SIGNAL_MODEL='DEFAULT_RESISTOR_0.001OHM_2_1';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20653729@FCL_RESISTOR.RES.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20653729@fcl_resistor.\res.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page4_ins20653729@fcl_resistor.\res.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_RESISTOR_0.001OHM_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R25 'RES_RC0402_25_DISCRETE_470-7539':
+ SIGNAL_MODEL='DEFAULT_RESISTOR_0.001OHM_2_1';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20654488@FCL_RESISTOR.RES.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20654488@fcl_resistor.\res.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page4_ins20654488@fcl_resistor.\res.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_RESISTOR_0.001OHM_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R26 'RES_RC0402_25_DISCRETE_0.55MM_4':
+ SIGNAL_MODEL='DEFAULT_RESISTOR_10000OHM_2_1';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20652714@FCL_RESISTOR.RES.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20652714@fcl_resistor.\res.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page4_ins20652714@fcl_resistor.\res.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_RESISTOR_10000OHM_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R27 'RES_RC0402_25_DISCRETE_0.55MM_4':
+ SIGNAL_MODEL='DEFAULT_RESISTOR_10000OHM_2_1';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20652726@FCL_RESISTOR.RES.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20652726@fcl_resistor.\res.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page4_ins20652726@fcl_resistor.\res.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_RESISTOR_10000OHM_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R28 'RES_RC0402_25_DISCRETE_470-7539':
+ SIGNAL_MODEL='DEFAULT_RESISTOR_0.001OHM_2_1';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20654478@FCL_RESISTOR.RES.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20654478@fcl_resistor.\res.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page4_ins20654478@fcl_resistor.\res.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_RESISTOR_0.001OHM_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R29 'RES_RC0402_25_DISCRETE_0.4MM__1':
+ SIGNAL_MODEL='DEFAULT_RESISTOR_1000.000000OHM_2_1';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20662126@FCL_RESISTOR.RES.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20662126@fcl_resistor.\res.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page4_ins20662126@fcl_resistor.\res.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_RESISTOR_1000.000000OHM_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R3 'RES_RC0402_25_DISCRETE_470-7539':
+ SIGNAL_MODEL='DEFAULT_RESISTOR_0.001OHM_2_1',
+ BOM_IGNORE='DNP';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20653894@FCL_RESISTOR.RES.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20653894@fcl_resistor.\res.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page4_ins20653894@fcl_resistor.\res.normal\(chips)',
+ BOM_IGNORE='DNP',
+ SIGNAL_MODEL='DEFAULT_RESISTOR_0.001OHM_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R30 'RES_RC0402_25_DISCRETE_0.4 MM_4':
+ SIGNAL_MODEL='DEFAULT_RESISTOR_15000OHM_2_1';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20652881@FCL_RESISTOR.RES.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20652881@fcl_resistor.\res.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page4_ins20652881@fcl_resistor.\res.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_RESISTOR_15000OHM_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R31 'RES_RC0402_25_DISCRETE_470-7541':
+ SIGNAL_MODEL='DEFAULT_RESISTOR_10000OHM_2_1',
+ BOM_IGNORE='DNP';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20461534@FCL_RESISTOR.RES.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20461534@fcl_resistor.\res.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page5_ins20461534@fcl_resistor.\res.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_RESISTOR_10000OHM_2_1',
+ BOM_IGNORE='DNP',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R32 'RES_RC0402_25_DISCRETE_470-7541':
+ SIGNAL_MODEL='DEFAULT_RESISTOR_10000OHM_2_1';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20461456@FCL_RESISTOR.RES.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20461456@fcl_resistor.\res.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page5_ins20461456@fcl_resistor.\res.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_RESISTOR_10000OHM_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R33 'RES_RC0402_25_DISCRETE_470-7539':
+ SIGNAL_MODEL='DEFAULT_RESISTOR_0.001OHM_2_1';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20654398@FCL_RESISTOR.RES.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20654398@fcl_resistor.\res.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page4_ins20654398@fcl_resistor.\res.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_RESISTOR_0.001OHM_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R34 'RES_RC0402_25_DISCRETE_0.4MM__2':
+ SIGNAL_MODEL='DEFAULT_RESISTOR_10000OHM_2_1',
+ BOM_IGNORE='DNP';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20652862@FCL_RESISTOR.RES.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20652862@fcl_resistor.\res.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page4_ins20652862@fcl_resistor.\res.normal\(chips)',
+ BOM_IGNORE='DNP',
+ SIGNAL_MODEL='DEFAULT_RESISTOR_10000OHM_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R35 'RES_RC0402_25_DISCRETE_0.4MM__2':
+ SIGNAL_MODEL='DEFAULT_RESISTOR_10000OHM_2_1';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20653536@FCL_RESISTOR.RES.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20653536@fcl_resistor.\res.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page4_ins20653536@fcl_resistor.\res.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_RESISTOR_10000OHM_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R36 'RES_RC0402_25_DISCRETE_470-3032':;
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20750689@FCL_RESISTOR.RES.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20750689@fcl_resistor.\res.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page7_ins20750689@fcl_resistor.\res.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R37 'RES_RC0402_25_DISCRETE_0.55 MM_':
+ SIGNAL_MODEL='DEFAULT_RESISTOR_4700OHM_2_1';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20654410@FCL_RESISTOR.RES.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20654410@fcl_resistor.\res.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page4_ins20654410@fcl_resistor.\res.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_RESISTOR_4700OHM_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R38 'RES_RC0402_25_DISCRETE_0.45 MM_':
+ SIGNAL_MODEL='DEFAULT_RESISTOR_0.001OHM_2_1';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20653737@FCL_RESISTOR.RES.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20653737@fcl_resistor.\res.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page4_ins20653737@fcl_resistor.\res.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_RESISTOR_0.001OHM_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R39 'RES_RC0402_25_DISCRETE_0.55MM_4':
+ SIGNAL_MODEL='DEFAULT_RESISTOR_10000OHM_2_1';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20654383@FCL_RESISTOR.RES.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20654383@fcl_resistor.\res.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page4_ins20654383@fcl_resistor.\res.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_RESISTOR_10000OHM_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R4 'RES_RC0402_25_DISCRETE_0.55 MM_':
+ SIGNAL_MODEL='DEFAULT_RESISTOR_4700OHM_2_1';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20652849@FCL_RESISTOR.RES.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20652849@fcl_resistor.\res.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page4_ins20652849@fcl_resistor.\res.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_RESISTOR_4700OHM_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R40 'RES_RC0402_25_DISCRETE_470-7541':
+ SIGNAL_MODEL='DEFAULT_RESISTOR_10000OHM_2_1',
+ BOM_IGNORE='DNP';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20461621@FCL_RESISTOR.RES.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20461621@fcl_resistor.\res.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page5_ins20461621@fcl_resistor.\res.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_RESISTOR_10000OHM_2_1',
+ BOM_IGNORE='DNP',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R42 'RES_RC0402_25_DISCRETE_470-7539':
+ SIGNAL_MODEL='DEFAULT_RESISTOR_0.001OHM_2_1';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20488828@FCL_RESISTOR.RES.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20488828@fcl_resistor.\res.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page7_ins20488828@fcl_resistor.\res.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_RESISTOR_0.001OHM_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R43 'RES_RC0402_25_DISCRETE_470-7541':
+ SIGNAL_MODEL='DEFAULT_RESISTOR_10000OHM_2_1';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20461699@FCL_RESISTOR.RES.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20461699@fcl_resistor.\res.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page5_ins20461699@fcl_resistor.\res.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_RESISTOR_10000OHM_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R44 'RES_RC0603_OV_DISCRETE_0.55 MM_':
+ ROOM='RMII_PHY',
+ SIGNAL_MODEL='DEFAULT_RESISTOR_49.900000OHM_2_1',
+ BOM_IGNORE='DNP';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20399083@FCL_RESISTOR.RES.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20399083@fcl_resistor.\res.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page7_ins20399083@fcl_resistor.\res.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_RESISTOR_49.900000OHM_2_1',
+ BOM_IGNORE='DNP',
+ ROOM='RMII_PHY',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R45 'RES_RC0402_25_DISCRETE_470-7539':
+ SIGNAL_MODEL='DEFAULT_RESISTOR_0.001OHM_2_1';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20461077@FCL_RESISTOR.RES.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20461077@fcl_resistor.\res.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page7_ins20461077@fcl_resistor.\res.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_RESISTOR_0.001OHM_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R46 'RES_RC0603_OV_DISCRETE_470-7584':
+ SIGNAL_MODEL='DEFAULT_RESISTOR_33.000000OHM_2_1';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20561729@FCL_RESISTOR.RES.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20561729@fcl_resistor.\res.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page3_ins20561729@fcl_resistor.\res.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_RESISTOR_33.000000OHM_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R47 'RES_RC0402_25_DISCRETE_470-7539':
+ SIGNAL_MODEL='DEFAULT_RESISTOR_0.001OHM_2_1',
+ BOM_IGNORE='DNP';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20461055@FCL_RESISTOR.RES.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20461055@fcl_resistor.\res.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page7_ins20461055@fcl_resistor.\res.normal\(chips)',
+ BOM_IGNORE='DNP',
+ SIGNAL_MODEL='DEFAULT_RESISTOR_0.001OHM_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R48 'RES_RC0603_OV_DISCRETE_0.55 MM_':
+ ROOM='RMII_PHY',
+ SIGNAL_MODEL='DEFAULT_RESISTOR_49.900000OHM_2_1',
+ BOM_IGNORE='DNP';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20399075@FCL_RESISTOR.RES.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20399075@fcl_resistor.\res.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page7_ins20399075@fcl_resistor.\res.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_RESISTOR_49.900000OHM_2_1',
+ BOM_IGNORE='DNP',
+ ROOM='RMII_PHY',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R49 'RES_RC0603_OV_DISCRETE_470-7584':
+ SIGNAL_MODEL='DEFAULT_RESISTOR_33.000000OHM_2_1';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20561721@FCL_RESISTOR.RES.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20561721@fcl_resistor.\res.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page3_ins20561721@fcl_resistor.\res.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_RESISTOR_33.000000OHM_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R5 'RES_RC0402_25_DISCRETE_0.55 MM_':
+ SIGNAL_MODEL='DEFAULT_RESISTOR_4700OHM_2_1';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20653115@FCL_RESISTOR.RES.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20653115@fcl_resistor.\res.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page4_ins20653115@fcl_resistor.\res.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_RESISTOR_4700OHM_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R50 'RES_RC0402_25_DISCRETE_470-7541':
+ ROOM='RMII_PHY',
+ SIGNAL_MODEL='DEFAULT_RESISTOR_10000OHM_2_1';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20614548@FCL_RESISTOR.RES.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20614548@fcl_resistor.\res.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page7_ins20614548@fcl_resistor.\res.normal\(chips)',
+ ROOM='RMII_PHY',
+ SIGNAL_MODEL='DEFAULT_RESISTOR_10000OHM_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R51 'RES_RC0603_OV_DISCRETE_0.55 MM_':
+ ROOM='RMII_PHY',
+ SIGNAL_MODEL='DEFAULT_RESISTOR_49.900000OHM_2_1',
+ BOM_IGNORE='DNP';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20597654@FCL_RESISTOR.RES.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20597654@fcl_resistor.\res.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page7_ins20597654@fcl_resistor.\res.normal\(chips)',
+ ROOM='RMII_PHY',
+ BOM_IGNORE='DNP',
+ SIGNAL_MODEL='DEFAULT_RESISTOR_49.900000OHM_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R52 'RES_RC0603_OV_DISCRETE_470-75_1':
+ SIGNAL_MODEL='DEFAULT_RESISTOR_1000.000000OHM_2_1',
+ BOM_IGNORE='DNP';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20572242@FCL_RESISTOR.RES.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20572242@fcl_resistor.\res.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page3_ins20572242@fcl_resistor.\res.normal\(chips)',
+ BOM_IGNORE='DNP',
+ SIGNAL_MODEL='DEFAULT_RESISTOR_1000.000000OHM_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R53 'RES_RC0402_25_DISCRETE_470-7539':
+ SIGNAL_MODEL='DEFAULT_RESISTOR_0.001OHM_2_1',
+ BOM_IGNORE='DNP';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20572038@FCL_RESISTOR.RES.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20572038@fcl_resistor.\res.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page3_ins20572038@fcl_resistor.\res.normal\(chips)',
+ BOM_IGNORE='DNP',
+ SIGNAL_MODEL='DEFAULT_RESISTOR_0.001OHM_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R54 'RES_RC0402_25_DISCRETE_470-7539':
+ SIGNAL_MODEL='DEFAULT_RESISTOR_0.001OHM_2_1';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20572255@FCL_RESISTOR.RES.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20572255@fcl_resistor.\res.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page3_ins20572255@fcl_resistor.\res.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_RESISTOR_0.001OHM_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R55 'RES_RC0402_25_DISCRETE_470-7606':
+ ROOM='RMII_PHY',
+ SIGNAL_MODEL='DEFAULT_RESISTOR_1500OHM_2_1',
+ BOM_IGNORE='DNP';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20399328@FCL_RESISTOR.RES.NORMAL(SCH_1)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20399328@fcl_resistor.\res.normal\(sch_1)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page7_ins20399328@fcl_resistor.\res.normal\(sch_1)',
+ BOM_IGNORE='DNP',
+ ROOM='RMII_PHY',
+ SIGNAL_MODEL='DEFAULT_RESISTOR_1500OHM_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R56 'RES_RC0402_25_DISCRETE_470-7606':
+ ROOM='RMII_PHY',
+ SIGNAL_MODEL='DEFAULT_RESISTOR_1500OHM_2_1',
+ BOM_IGNORE='DNP';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20399341@FCL_RESISTOR.RES.NORMAL(SCH_1)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20399341@fcl_resistor.\res.normal\(sch_1)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page7_ins20399341@fcl_resistor.\res.normal\(sch_1)',
+ ROOM='RMII_PHY',
+ BOM_IGNORE='DNP',
+ SIGNAL_MODEL='DEFAULT_RESISTOR_1500OHM_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R57 'RES_RC0402_25_DISCRETE_470-7579':
+ SIGNAL_MODEL='DEFAULT_RESISTOR_33.000000OHM_2_1';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20614070@FCL_RESISTOR.RES.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20614070@fcl_resistor.\res.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page7_ins20614070@fcl_resistor.\res.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_RESISTOR_33.000000OHM_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R58 'RES_RC0603_OV_DISCRETE_470-7802':
+ SIGNAL_MODEL='DEFAULT_RESISTOR_6490OHM_2_1';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20399540@FCL_RESISTOR.RES.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20399540@fcl_resistor.\res.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page7_ins20399540@fcl_resistor.\res.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_RESISTOR_6490OHM_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R59 'RES_RC0603_OV_DISCRETE_0.55 MM_':
+ ROOM='RMII_PHY',
+ SIGNAL_MODEL='DEFAULT_RESISTOR_49.900000OHM_2_1',
+ BOM_IGNORE='DNP';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20597662@FCL_RESISTOR.RES.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20597662@fcl_resistor.\res.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page7_ins20597662@fcl_resistor.\res.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_RESISTOR_49.900000OHM_2_1',
+ BOM_IGNORE='DNP',
+ ROOM='RMII_PHY',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R6 'RES_RC0402_25_DISCRETE_470-7541':
+ SIGNAL_MODEL='DEFAULT_RESISTOR_10000OHM_2_1';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20653288@FCL_RESISTOR.RES.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20653288@fcl_resistor.\res.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page4_ins20653288@fcl_resistor.\res.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_RESISTOR_10000OHM_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R60 'RES_RC0402_25_DISCRETE_470-7539':
+ SIGNAL_MODEL='DEFAULT_RESISTOR_0.001OHM_2_1';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20620452@FCL_RESISTOR.RES.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20620452@fcl_resistor.\res.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page7_ins20620452@fcl_resistor.\res.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_RESISTOR_0.001OHM_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R61 'RES_RC0402_25_DISCRETE_470-7539':
+ SIGNAL_MODEL='DEFAULT_RESISTOR_0.001OHM_2_1',
+ BOM_IGNORE='DNP';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20262127@FCL_RESISTOR.RES.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20262127@fcl_resistor.\res.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page5_ins20262127@fcl_resistor.\res.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_RESISTOR_0.001OHM_2_1',
+ BOM_IGNORE='DNP',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R62 'RES_RC0402_25_DISCRETE_470-7539':
+ SIGNAL_MODEL='DEFAULT_RESISTOR_0.001OHM_2_1';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20598254@FCL_RESISTOR.RES.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20598254@fcl_resistor.\res.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page3_ins20598254@fcl_resistor.\res.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_RESISTOR_0.001OHM_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R63 'RES_RC0402_25_DISCRETE_470-7539':
+ SIGNAL_MODEL='DEFAULT_RESISTOR_0.001OHM_2_1';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20598246@FCL_RESISTOR.RES.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20598246@fcl_resistor.\res.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page3_ins20598246@fcl_resistor.\res.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_RESISTOR_0.001OHM_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R65 'RES_RC0603_OV_DISCRETE_470-75_2':
+ SIGNAL_MODEL='DEFAULT_RESISTOR_1OHM_1_2',
+ BOM_IGNORE='DNP';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20418140@FCL_RESISTOR.RES.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20418140@fcl_resistor.\res.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page3_ins20418140@fcl_resistor.\res.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_RESISTOR_1OHM_1_2',
+ BOM_IGNORE='DNP',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R67 'RES_RC0402_25_DISCRETE_470-7541':
+ ROOM='RMII_PHY',
+ SIGNAL_MODEL='DEFAULT_RESISTOR_10000OHM_2_1',
+ BOM_IGNORE='DNP';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20399221@FCL_RESISTOR.RES.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20399221@fcl_resistor.\res.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page7_ins20399221@fcl_resistor.\res.normal\(chips)',
+ BOM_IGNORE='DNP',
+ ROOM='RMII_PHY',
+ SIGNAL_MODEL='DEFAULT_RESISTOR_10000OHM_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R68 'RES_RC0402_25_DISCRETE_470-3081':;
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20818069@FCL_RESISTOR.RES.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20818069@fcl_resistor.\res.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page3_ins20818069@fcl_resistor.\res.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R69 'RES_RC0402_25_DISCRETE_470-7541':
+ ROOM='RMII_PHY',
+ SIGNAL_MODEL='DEFAULT_RESISTOR_10000OHM_2_1',
+ BOM_IGNORE='DNP';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20399232@FCL_RESISTOR.RES.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20399232@fcl_resistor.\res.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page7_ins20399232@fcl_resistor.\res.normal\(chips)',
+ ROOM='RMII_PHY',
+ BOM_IGNORE='DNP',
+ SIGNAL_MODEL='DEFAULT_RESISTOR_10000OHM_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R7 'RES_RC0402_25_DISCRETE_470-7541':
+ SIGNAL_MODEL='DEFAULT_RESISTOR_10000OHM_2_1',
+ BOM_IGNORE='DNP';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20653052@FCL_RESISTOR.RES.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20653052@fcl_resistor.\res.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page4_ins20653052@fcl_resistor.\res.normal\(chips)',
+ BOM_IGNORE='DNP',
+ SIGNAL_MODEL='DEFAULT_RESISTOR_10000OHM_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R70 'RES_RC0402_25_DISCRETE_470-7541':
+ ROOM='RMII_PHY',
+ SIGNAL_MODEL='DEFAULT_RESISTOR_10000OHM_2_1',
+ BOM_IGNORE='DNP';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20399247@FCL_RESISTOR.RES.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20399247@fcl_resistor.\res.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page7_ins20399247@fcl_resistor.\res.normal\(chips)',
+ BOM_IGNORE='DNP',
+ ROOM='RMII_PHY',
+ SIGNAL_MODEL='DEFAULT_RESISTOR_10000OHM_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R71 'RES_RC0402_25_DISCRETE_470-3033':;
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20817031@FCL_RESISTOR.RES.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20817031@fcl_resistor.\res.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page3_ins20817031@fcl_resistor.\res.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R72 'RES_RC0402_25_DISCRETE_470-7539':
+ SIGNAL_MODEL='DEFAULT_RESISTOR_0.001OHM_2_1',
+ BOM_IGNORE='DNP';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20561578@FCL_RESISTOR.RES.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20561578@fcl_resistor.\res.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page3_ins20561578@fcl_resistor.\res.normal\(chips)',
+ BOM_IGNORE='DNP',
+ SIGNAL_MODEL='DEFAULT_RESISTOR_0.001OHM_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R73 'RES_RC0402_25_DISCRETE_470-3033':;
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20817023@FCL_RESISTOR.RES.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20817023@fcl_resistor.\res.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page3_ins20817023@fcl_resistor.\res.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R74 'RES_RC0402_25_DISCRETE_0.6MM_47':
+ SIGNAL_MODEL='DEFAULT_RESISTOR_0.001OHM_1_2';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20565148@FCL_RESISTOR.RES.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20565148@fcl_resistor.\res.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page3_ins20565148@fcl_resistor.\res.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_RESISTOR_0.001OHM_1_2',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R75 'RES_RC0402_25_DISCRETE_0.4MM_47':
+ SIGNAL_MODEL='DEFAULT_RESISTOR_10000OHM_2_1',
+ BOM_IGNORE='DNP';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20459489@FCL_RESISTOR.RES.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20459489@fcl_resistor.\res.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page5_ins20459489@fcl_resistor.\res.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_RESISTOR_10000OHM_2_1',
+ BOM_IGNORE='DNP',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R76 'RES_RC0402_25_DISCRETE_470-3032':;
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20750647@FCL_RESISTOR.RES.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20750647@fcl_resistor.\res.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page7_ins20750647@fcl_resistor.\res.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R79 'RES_RC0402_25_DISCRETE_470-7579':;
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20756196@FCL_RESISTOR.RES.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20756196@fcl_resistor.\res.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page5_ins20756196@fcl_resistor.\res.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R8 'RES_RC0402_25_DISCRETE_0.55 MM_':
+ SIGNAL_MODEL='DEFAULT_RESISTOR_4700OHM_2_1',
+ BOM_IGNORE='DNP';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20653128@FCL_RESISTOR.RES.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20653128@fcl_resistor.\res.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page4_ins20653128@fcl_resistor.\res.normal\(chips)',
+ BOM_IGNORE='DNP',
+ SIGNAL_MODEL='DEFAULT_RESISTOR_4700OHM_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R80 'RES_RC0402_25_DISCRETE_470-7539':
+ SIGNAL_MODEL='DEFAULT_RESISTOR_0.001OHM_2_1';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20775527@FCL_RESISTOR.RES.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20775527@fcl_resistor.\res.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page3_ins20775527@fcl_resistor.\res.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_RESISTOR_0.001OHM_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R81 'RES_RC0402_25_DISCRETE_0.55MM_1':
+ ROOM='RMII_PHY',
+ SIGNAL_MODEL='DEFAULT_RESISTOR_0.001OHM_2_1',
+ BOM_IGNORE='DNP';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20799491@FCL_RESISTOR.RES.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20799491@fcl_resistor.\res.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page7_ins20799491@fcl_resistor.\res.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_RESISTOR_0.001OHM_2_1',
+ BOM_IGNORE='DNP',
+ ROOM='RMII_PHY',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R82 'RES_RC0402_25_DISCRETE_0.55MM_1':
+ ROOM='RMII_PHY',
+ SIGNAL_MODEL='DEFAULT_RESISTOR_0.001OHM_2_1',
+ BOM_IGNORE='DNP';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20799519@FCL_RESISTOR.RES.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20799519@fcl_resistor.\res.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page7_ins20799519@fcl_resistor.\res.normal\(chips)',
+ ROOM='RMII_PHY',
+ BOM_IGNORE='DNP',
+ SIGNAL_MODEL='DEFAULT_RESISTOR_0.001OHM_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R83 'RES_RC0402_25_DISCRETE_0.55MM_1':
+ ROOM='RMII_PHY',
+ SIGNAL_MODEL='DEFAULT_RESISTOR_0.001OHM_2_1';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20802712@FCL_RESISTOR.RES.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20802712@fcl_resistor.\res.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page7_ins20802712@fcl_resistor.\res.normal\(chips)',
+ ROOM='RMII_PHY',
+ SIGNAL_MODEL='DEFAULT_RESISTOR_0.001OHM_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R86 'RES_RC0402_25_DISCRETE_470-7541':
+ SIGNAL_MODEL='DEFAULT_RESISTOR_10000OHM_2_1',
+ BOM_IGNORE='DNP';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20809549@FCL_RESISTOR.RES.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20809549@fcl_resistor.\res.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page3_ins20809549@fcl_resistor.\res.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_RESISTOR_10000OHM_2_1',
+ BOM_IGNORE='DNP',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R87 'RES_RC0402_25_DISCRETE_470-7541':
+ SIGNAL_MODEL='DEFAULT_RESISTOR_10000OHM_2_1',
+ BOM_IGNORE='DNP';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20809620@FCL_RESISTOR.RES.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20809620@fcl_resistor.\res.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page3_ins20809620@fcl_resistor.\res.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_RESISTOR_10000OHM_2_1',
+ BOM_IGNORE='DNP',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R88 'RES_RC0402_25_DISCRETE_470-3051':;
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20817144@FCL_RESISTOR.RES.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20817144@fcl_resistor.\res.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page3_ins20817144@fcl_resistor.\res.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R9 'RES_RC0603_OV_DISCRETE_470-7541':
+ SIGNAL_MODEL='DEFAULT_RESISTOR_4700OHM_2_1';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20308674@FCL_RESISTOR.RES.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20308674@fcl_resistor.\res.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page5_ins20308674@fcl_resistor.\res.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_RESISTOR_4700OHM_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ RN1 'RESISTOR_ARRAY_RNET_38V_0603_DI':;
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20613241@FCL_RESISTOR.RESISTOR_ARRAY.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20613241@fcl_resistor.\resistor_array.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page7_ins20613241@fcl_resistor.\resistor_array.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ SH1 'RES_SHORT-2_SH0603_DISCRETE_470':
+ SIGNAL_MODEL='DEFAULT_RESISTOR_0.001OHM_2_1';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20652706@FCL_RESISTOR.RES_SHORT-2.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20652706@fcl_resistor.\res_short-2.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page4_ins20652706@fcl_resistor.\res_short-2.normal\(chips)',
+ SIGNAL_MODEL='DEFAULT_RESISTOR_0.001OHM_2_1',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ SW1 'SW2_STM151XX_SW2_4X3MM_SM_IC_2M':;
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20767973@FCL_SWITCH.SW2_STM151XX.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20767973@fcl_switch.\sw2_stm151xx.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page4_ins20767973@fcl_switch.\sw2_stm151xx.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ SW2 'SW2_STM151XX_SW2_4X3MM_SM_IC_2M':;
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20767661@FCL_SWITCH.SW2_STM151XX.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20767661@fcl_switch.\sw2_stm151xx.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page5_ins20767661@fcl_switch.\sw2_stm151xx.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ SW3 'SW2_STM151XX_SW2_4X3MM_SM_IC_2M':;
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20767653@FCL_SWITCH.SW2_STM151XX.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20767653@fcl_switch.\sw2_stm151xx.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page5_ins20767653@fcl_switch.\sw2_stm151xx.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ TP1 'TESTLOOP_TPAD_030_IO_0.1MM_211-':;
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20653205@FCL_CONNECTOR.TESTLOOP.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20653205@fcl_connector.\testloop.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page4_ins20653205@fcl_connector.\testloop.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ TP10 'TESTLOOP_TPAD_030_IO_0.1MM_211-':;
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20654420@FCL_CONNECTOR.TESTLOOP.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20654420@fcl_connector.\testloop.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page4_ins20654420@fcl_connector.\testloop.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ TP11 'TESTLOOP_TPAD_030_IO_0.1MM_211-':;
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20316316@FCL_CONNECTOR.TESTLOOP.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20316316@fcl_connector.\testloop.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page5_ins20316316@fcl_connector.\testloop.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ TP12 'TESTLOOP_TPAD_030_IO_0.1MM_211-':;
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20504067@FCL_CONNECTOR.TESTLOOP.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20504067@fcl_connector.\testloop.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page3_ins20504067@fcl_connector.\testloop.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ TP13 'TESTLOOP_TPAD_030_IO_0.1MM_211-':;
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20196023@FCL_CONNECTOR.TESTLOOP.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20196023@fcl_connector.\testloop.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page3_ins20196023@fcl_connector.\testloop.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ TP14 'TESTLOOP_TPAD_030_IO_0.1MM_211-':;
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20518099@FCL_CONNECTOR.TESTLOOP.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20518099@fcl_connector.\testloop.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page3_ins20518099@fcl_connector.\testloop.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ TP15 'TESTLOOP_TPAD_030_IO_0.1MM_211-':;
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20561655@FCL_CONNECTOR.TESTLOOP.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20561655@fcl_connector.\testloop.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page3_ins20561655@fcl_connector.\testloop.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ TP16 'TESTLOOP_TEST_LOOP_IO_4.8 MM_21':
+ BOM_IGNORE='DNP';
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20172246@FCL_CONNECTOR.TESTLOOP.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20172246@fcl_connector.\testloop.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page5_ins20172246@fcl_connector.\testloop.normal\(chips)',
+ BOM_IGNORE='DNP',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ TP17 'TESTLOOP_TPAD_030_IO_0.1MM_211-':;
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20518176@FCL_CONNECTOR.TESTLOOP.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20518176@fcl_connector.\testloop.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page3_ins20518176@fcl_connector.\testloop.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ TP2 'TESTLOOP_TPAD_030_IO_0.1MM_211-':;
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20652857@FCL_CONNECTOR.TESTLOOP.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20652857@fcl_connector.\testloop.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page4_ins20652857@fcl_connector.\testloop.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ TP3 'TESTLOOP_TPAD_030_IO_0.1MM_211-':;
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20652844@FCL_CONNECTOR.TESTLOOP.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20652844@fcl_connector.\testloop.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page4_ins20652844@fcl_connector.\testloop.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ TP4 'TESTLOOP_TPAD_030_IO_0.1MM_211-':;
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20311049@FCL_CONNECTOR.TESTLOOP.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20311049@fcl_connector.\testloop.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page5_ins20311049@fcl_connector.\testloop.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ TP5 'TESTLOOP_TPAD_030_IO_0.1MM_211-':;
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20653032@FCL_CONNECTOR.TESTLOOP.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20653032@fcl_connector.\testloop.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page4_ins20653032@fcl_connector.\testloop.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ TP6 'TESTLOOP_TPAD_030_IO_0.1MM_211-':;
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20653218@FCL_CONNECTOR.TESTLOOP.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20653218@fcl_connector.\testloop.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page4_ins20653218@fcl_connector.\testloop.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ TP7 'TESTLOOP_TPAD_030_IO_0.1MM_211-':;
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20653086@FCL_CONNECTOR.TESTLOOP.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20653086@fcl_connector.\testloop.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page4_ins20653086@fcl_connector.\testloop.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ TP8 'TESTLOOP_TPAD_030_IO_0.1MM_211-':;
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20311762@FCL_CONNECTOR.TESTLOOP.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20311762@fcl_connector.\testloop.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page5_ins20311762@fcl_connector.\testloop.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ TP9 'TESTLOOP_TPAD_030_IO_0.1MM_211-':;
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20654425@FCL_CONNECTOR.TESTLOOP.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20654425@fcl_connector.\testloop.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page4_ins20654425@fcl_connector.\testloop.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ U1 'DIODE_TVS_BIDIR_0402_MLP_IC_0.4':;
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20653558@FCL_SEMICONDUCTOR.DIODE_TVS_BIDIR.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20653558@fcl_semiconductor.\diode_tvs_bidir.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page4_ins20653558@fcl_semiconductor.\diode_tvs_bidir.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ U10 '74LVC2T45GM_8P_QFN8_1P6X1P6MM_I':;
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20654302@FCL_IC.74LVC2T45GM_8P.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20654302@fcl_ic.\74lvc2t45gm_8p.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page4_ins20654302@fcl_ic.\74lvc2t45gm_8p.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ U11 'MIC2005-0.8YM6_SOT23-6_A_IC_1.4':;
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20662194@FCL_IC4.MIC2005-0.8YM6.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20662194@fcl_ic4.\mic2005-0.8ym6.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page4_ins20662194@fcl_ic4.\mic2005-0.8ym6.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ U12 '74LVCH1T45_6P_UDFN6_1X1P5MM_IC_':;
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20654371@FCL_IC4.74LVCH1T45_6P.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20654371@fcl_ic4.\74lvch1t45_6p.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page4_ins20654371@fcl_ic4.\74lvch1t45_6p.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ U13 'KSZ8081RNACA_QFN_24P_QFN24_4X4M':;
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20608449@FCL_IC5.KSZ8081RNACA_QFN_24P.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20608449@fcl_ic5.\ksz8081rnaca_qfn_24p.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page7_ins20608449@fcl_ic5.\ksz8081rnaca_qfn_24p.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ U14 'K64FN1M0VLL12_100P_LQFP100_0P5_':;
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20395505@FCL_IC_FREESCALE.K64FN1M0VLL12_100P.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20395505@fcl_ic_freescale.\k64fn1m0vll12_100p.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page3_ins20395505@fcl_ic_freescale.\k64fn1m0vll12_100p.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ U15 'DIODE_TVS_BIDIR_0402_MLP_IC_0.4':;
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20561521@FCL_SEMICONDUCTOR.DIODE_TVS_BIDIR.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20561521@fcl_semiconductor.\diode_tvs_bidir.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page3_ins20561521@fcl_semiconductor.\diode_tvs_bidir.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ U16 'DIODE_TVS_BIDIR_0402_MLP_IC_0.4':;
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20561533@FCL_SEMICONDUCTOR.DIODE_TVS_BIDIR.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20561533@fcl_semiconductor.\diode_tvs_bidir.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page3_ins20561533@fcl_semiconductor.\diode_tvs_bidir.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ U17 'LD1117AS18_SOT223_IC_1.8MM_312-':;
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20658409@FCL_IC2.LD1117AS18.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20658409@fcl_ic2.\ld1117as18.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page5_ins20658409@fcl_ic2.\ld1117as18.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ U18 'DIODE_TVS_BIDIR_0402_MLP_IC_0.4':;
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20561513@FCL_SEMICONDUCTOR.DIODE_TVS_BIDIR.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20561513@fcl_semiconductor.\diode_tvs_bidir.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page3_ins20561513@fcl_semiconductor.\diode_tvs_bidir.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ U2 '74LVCH1T45_6P_UDFN6_1X1P5MM_IC_':;
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20654025@FCL_IC4.74LVCH1T45_6P.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20654025@fcl_ic4.\74lvch1t45_6p.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page4_ins20654025@fcl_ic4.\74lvch1t45_6p.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ U3 'NTSX2102GU8H_8P_XQFN8_1P45X1P25':;
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20654080@FCL_IC5.NTSX2102GU8H_8P.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20654080@fcl_ic5.\ntsx2102gu8h_8p.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page4_ins20654080@fcl_ic5.\ntsx2102gu8h_8p.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ U4 'DIODE_TVS_BIDIR_0402_MLP_IC_0.4':;
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20653568@FCL_SEMICONDUCTOR.DIODE_TVS_BIDIR.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20653568@fcl_semiconductor.\diode_tvs_bidir.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page4_ins20653568@fcl_semiconductor.\diode_tvs_bidir.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ U5 'PK20DX128V_QFN_32P_QFN32_S142EP':;
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20652963@FCL_IC_FREESCALE.PK20DX128V_QFN_32P.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20652963@fcl_ic_freescale.\pk20dx128v_qfn_32p.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page4_ins20652963@fcl_ic_freescale.\pk20dx128v_qfn_32p.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ U6 'DIODE_TVS_BIDIR_0402_MLP_IC_0.4':;
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20653576@FCL_SEMICONDUCTOR.DIODE_TVS_BIDIR.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20653576@fcl_semiconductor.\diode_tvs_bidir.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page4_ins20653576@fcl_semiconductor.\diode_tvs_bidir.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ U7 '74LVCH1T45_6P_UDFN6_1X1P5MM_IC_':;
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20654458@FCL_IC4.74LVCH1T45_6P.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20654458@fcl_ic4.\74lvch1t45_6p.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page4_ins20654458@fcl_ic4.\74lvch1t45_6p.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ U8 'FXOS8700CQ_QFN_16P_QFN5X3_0P5_3':;
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20308290@FCL_IC_FREESCALE.FXOS8700CQ_QFN_16P.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20308290@fcl_ic_freescale.\fxos8700cq_qfn_16p.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page5_ins20308290@fcl_ic_freescale.\fxos8700cq_qfn_16p.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ U9 'NLU2GU04_ULLGA6_1P45X1_0P5MM_IC':;
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20653771@FCL_IC3.NLU2GU04.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20653771@fcl_ic3.\nlu2gu04.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page4_ins20653771@fcl_ic3.\nlu2gu04.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ Y1 'XTAL_CS_XTAL3_3P35X1P45_SM_IC_0':;
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20654274@FCL_XTAL_OSC.XTAL_CS.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20654274@fcl_xtal_osc.\xtal_cs.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page4_ins20654274@fcl_xtal_osc.\xtal_cs.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ Y2 'CRYSTAL13_XTAL4_3P4X2P7_IC_0.8M':;
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20638619@FCL_XTAL_OSC.CRYSTAL13.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20638619@fcl_xtal_osc.\crystal13.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page7_ins20638619@fcl_xtal_osc.\crystal13.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ Y3 'XTAL_XTAL2-3P2X1P5-SM_IC_0.9MM_':;
+
+SECTION_NUMBER 1
+ '@SCH-28163.SCHEMATIC1(SCH_1):INS20420743@FCL_XTAL_OSC.XTAL.NORMAL(CHIPS)':
+ C_PATH='@\sch-28163\.schematic1(sch_1):ins20420743@fcl_xtal_osc.\xtal.normal\(chips)',
+ P_PATH='@\sch-28163\.schematic1(sch_1):page3_ins20420743@fcl_xtal_osc.\xtal.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+END.
