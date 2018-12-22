@@ -1,4 +1,5 @@
 通用平台/PCB/flexplat/History/
+PCB/FPPWTS/Project Outputs for PWTS/
 *.rar
 *.zip
 *.LOG
@@ -9,3 +10,4 @@
 *.PcbDocPreview
 *.exe
 FRDM-K64F/FRDM-K64F/
+ARM+FPGA/参考设计/
