@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> cd6af77... check file system format
 *.rar
 *.zip
 *.LOG
@@ -5,6 +9,11 @@
 *.CSV
 *.drc
 *.exe
+<<<<<<< HEAD
 FRDM-K64F/FRDM-K64F/
 !doc/designDoc/0.2/FT2232使用/*
 */Project Outputs for FPV0.2.1/
+=======
+doc/referDoc/FRDM-K64F/FRDM-K64F/
+doc/referDoc/ARM+FPGA/参考设计/
+>>>>>>> cd6af77... check file system format
