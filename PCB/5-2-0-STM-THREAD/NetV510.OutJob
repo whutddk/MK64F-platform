@@ -2,9 +2,9 @@
 Version=1.0
 
 [PublishSettings]
-OutputFilePath2=Q:\通用平台\PCB\net5\.PDF
+OutputFilePath2=M:\通用平台\PCB\5-2-0-STM-THREAD\.PDF
 ReleaseManaged2=0
-OutputBasePath2=Q:\通用平台\PCB\net5\
+OutputBasePath2=M:\通用平台\PCB\5-2-0-STM-THREAD\
 OutputPathMedia2=
 OutputPathMediaValue2=
 OutputPathOutputer2=[Output Type]
@@ -81,7 +81,7 @@ WmvVideoCodecName4=Windows Media Video V7
 WmvQuality4=80
 
 [GeneratedFilesSettings]
-RelativeOutputPath2=Q:\通用平台\PCB\net5\.PDF
+RelativeOutputPath2=M:\通用平台\PCB\5-2-0-STM-THREAD\.PDF
 OpenOutputs2=1
 RelativeOutputPath3=
 OpenOutputs3=1
