@@ -21,6 +21,6 @@ A PCB platform of Arm + Fpga
 * 4-3-5
 * 5-2-0
 
-##  LGPL V3 for all and only my design
+##  Apache for all and only my design
 
 
