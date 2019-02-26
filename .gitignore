@@ -1,7 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+通用平台/PCB/flexplat/History/
+PCB/FPPWTS/Project Outputs for PWTS/
+=======
+>>>>>>> feature/0.2
 =======
 
->>>>>>> cd6af77... check file system format
+>>>>>>> feature/4.3.3
 *.rar
 *.zip
 *.LOG
@@ -11,9 +16,13 @@
 *.exe
 <<<<<<< HEAD
 FRDM-K64F/FRDM-K64F/
+<<<<<<< HEAD
+ARM+FPGA/参考设计/
+=======
 !doc/designDoc/0.2/FT2232使用/*
 */Project Outputs for FPV0.2.1/
+>>>>>>> feature/0.2
 =======
 doc/referDoc/FRDM-K64F/FRDM-K64F/
 doc/referDoc/ARM+FPGA/参考设计/
->>>>>>> cd6af77... check file system format
+>>>>>>> feature/4.3.3
