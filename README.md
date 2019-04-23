@@ -1,6 +1,6 @@
 # mk64f-platform
 
-A PCB platform of Arm（NXP-Kinetis） + FPGA（Xilinx-Aritx-7）
+A PCB platform of Arm (NXP-Kinetis) + FPGA (Xilinx-Aritx-7)
 
 ------------------------------------
 
