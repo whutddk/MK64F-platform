@@ -1,15 +1,17 @@
 # mk64f-platform
 
-A PCB platform of Arm + Fpga
+A PCB platform of Arm（NXP-Kinetis） + FPGA（Xilinx-Aritx-7）
 
-## file system struct
+------------------------------------
+
+### Construction
 * doc 
   - designDoc(some document from manufacturer may be replaced by link )
   - referDoc(introduce of the board and design requirement)
 * outputFile (output design file as pdf format)
 * PCB(altium designer source file)
 
-## version list
+### Version List
 * 0-1
 * 0-2
 * 0-3
@@ -21,6 +23,6 @@ A PCB platform of Arm + Fpga
 * 4-3-5
 * 5-2-0
 
-##  Apache for all and only my design
+##  Apache 2.0 for all and only my design
 
 
